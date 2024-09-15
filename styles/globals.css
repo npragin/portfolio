@@ -4,7 +4,7 @@
 
 body {
     /* transition: all; */
-    background-color: #000  !important;
+    background-color: #12172E  !important;
     /* padding: 0.8rem; */
     /* transition: width 5s ease-in .2s; */
     overflow: hidden;
@@ -12,12 +12,26 @@ body {
 }
 
 @layer utilities {
+  .peace-cursor-emoji,
+  .love-cursor-emoji {
+    @apply inline-block relative cursor-default;
+    padding-bottom: 0.25rem;
+  }
+
+  .peace-cursor-emoji:hover {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'%3E%3Ctext y='50%' x='50%' dy='.35em' text-anchor='middle' font-size='80'%3E✌️%3C/text%3E%3C/svg%3E"), auto;
+  }
+  
+  .love-cursor-emoji:hover {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'%3E%3Ctext y='50%' x='50%' dy='.35em' text-anchor='middle' font-size='80'%3E❤️‍🔥%3C/text%3E%3C/svg%3E"), auto;
+  }
+
   @layer components {
     .transition {
       @apply transition-all delay-200 !duration-1000;
     }
     .card_stylings {
-      @apply bg-EveningBlack/95 rounded-xl hover:bg-gradient-to-br hover:from-Green/10 hover:to-indigo-600/5;
+      @apply bg-transparent rounded-md hover:bg-gradient-to-br hover:bg-violet-500/5;
     }
     .button {
       @apply bg-Green hover:bg-Green/60 transition rounded-xl text-MidNightBlack text-base font-medium  px-8 py-2;
@@ -69,6 +83,15 @@ body {
         ::-webkit-scrollbar-track {
             box-shadow: inset 0 0 5px grey; 
             border-radius: 10px;
+        }
+
+        .hide-scrollbar {
+          scrollbar-width: none;  /* Firefox */
+          -ms-overflow-style: none;  /* IE and Edge */
+        }
+        
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;  /* Chrome, Safari, and Opera */
         }
         
         /* Handle */
