@@ -3,6 +3,19 @@ const experience = [
 		id: 0,
 		title: "Software Engineer, Intern",
 		previousTitles: [],
+		date: "Sep 2024 - Present",
+		company: "CoRIS Institute",
+		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim2real with better synthetic orchard data using Blender.",
+		tools: [
+			"ROS",
+			"Blender",
+			"Gymnasium",
+		],
+	},
+	{
+		id: 1,
+		title: "Software Engineer, Intern",
+		previousTitles: [],
 		date: "Jun 2024 - Sep 2024",
 		company: "Stealth Startup (Drones)",
 		desc: "At this UAV startup, I collaborated with a diverse team to deliver safety-critical software and a cloud-based fleet management platform. I enabled ML analytics, improved network performance, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I contributed to meeting aggressive deadlines for the Alpha launch.",
@@ -16,12 +29,12 @@ const experience = [
 		],
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Automated Systems Engineer",
 		previousTitles: [],
 		date: "Feb 2024 — Present",
 		company: "Global Formula Racing",
-		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I streamlined the debugging process and coordinate with alumnae and faculty advisors to prepare our vehicle for global competitions.",
+		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumnae and faculty advisors to prepare our vehicle for global competitions.",
 		tools: [
 			"Embedded Software",
 			"ROS",
@@ -32,7 +45,7 @@ const experience = [
 		link: "https://www.global-formula-racing.com/en/",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Application Developer",
 		previousTitles: ["Application Developer, Intern"],
 		date: "2022 — 2023",
@@ -48,7 +61,7 @@ const experience = [
 		link: "https://www.clearscale.com/",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Software Intern",
 		previousTitles: [],
 		date: "Mar — May 2019",
@@ -64,7 +77,7 @@ const experience = [
 		link: "https://tutree.com/",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Swim Instructor",
 		previousTitles: [],
 		date: "May — Aug 2018",
