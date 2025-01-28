@@ -30,7 +30,7 @@ const experience = [
 	},
 	{
 		id: 2,
-		title: "Automated Systems Engineer",
+		title: "Autonomous Systems Engineer",
 		previousTitles: [],
 		date: "Feb 2024 — Present",
 		company: "Global Formula Racing",
