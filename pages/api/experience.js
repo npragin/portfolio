@@ -1,7 +1,7 @@
 const experience = [
 	{
 		id: 0,
-		title: "Software Engineer, Intern",
+		title: "Undergraduate Research Assistant",
 		previousTitles: [],
 		date: "Sep 2024 - Present",
 		company: "CoRIS Institute",
