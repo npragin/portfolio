@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
 	return (
-		<Html lang="en">
+		<Html lang="en" className="no-scrollbar">
 			<Head>
 				<link rel="icon" href="/favicon.svg" sizes="any" />
 			</Head>
