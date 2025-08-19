@@ -37,7 +37,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<SpotlightCursor />
-			<div className="h-screen flex flex-col select-none font-circular overflow-hidden">
+			<div className="h-screen flex flex-col font-circular overflow-hidden">
 				<div className="flex relative h-full justify-center gap-x-4 overflow-y-auto no-scrollbar">
 					<section id="about"></section>
 					{/* left column */}

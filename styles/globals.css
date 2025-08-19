@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+::selection {
+  @apply bg-violet-500 text-violet-900;
+}
+
 @layer utilities {
   .peace-cursor-emoji,
   .love-cursor-emoji {
