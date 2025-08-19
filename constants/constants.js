@@ -8,5 +8,4 @@ export const SOCIAL_LINKS = {
   GMAIL: 'mailto:npragin@gmail.com',
   GITHUB: 'https://github.com/npragin',
   LINKEDIN: 'https://www.linkedin.com/in/npragin/',
-  INSTAGRAM: 'https://www.instagram.com/noah.pragin/',
 };

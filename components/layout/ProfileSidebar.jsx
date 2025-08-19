@@ -39,7 +39,6 @@ const ProfileSidebar = () => {
 						{ icon: MdOutlineEmail, link: SOCIAL_LINKS.GMAIL },
 						{ icon: FaLinkedin, link: SOCIAL_LINKS.LINKEDIN },
 						{ icon: FaGithub, link: SOCIAL_LINKS.GITHUB },
-						{ icon: FaInstagram, link: SOCIAL_LINKS.INSTAGRAM },
 					].map(({ icon: Icon, link }, index) => (
 						<Link key={index} href={link} target='_blank' rel='noreferrer'>
 							<div className="transition-colors duration-300 hover:text-slate-200">
