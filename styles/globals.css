@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 body {
-    /* transition: all; */
     background-color: #12172E  !important;
-    /* padding: 0.8rem; */
-    /* transition: width 5s ease-in .2s; */
 }
 
 ::selection {
