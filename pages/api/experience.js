@@ -16,7 +16,7 @@ const experience = [
 		id: 1,
 		title: "Software Engineer, Intern",
 		previousTitles: [],
-		date: "Jun 2024 - Sep 2024",
+		date: "Jun - Sep 2024",
 		company: "Stealth Startup (Drones)",
 		desc: "At this UAV startup, I collaborated with a diverse team to deliver safety-critical software and a cloud-based fleet management platform. I enabled ML analytics, improved network performance, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I contributed to meeting aggressive deadlines for the Alpha launch.",
 		tools: [
@@ -32,7 +32,7 @@ const experience = [
 		id: 2,
 		title: "Autonomous Systems Engineer",
 		previousTitles: [],
-		date: "Feb 2024 — Present",
+		date: "Feb 2024 - Present",
 		company: "Global Formula Racing",
 		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumnae and faculty advisors to prepare our vehicle for global competitions.",
 		tools: [
