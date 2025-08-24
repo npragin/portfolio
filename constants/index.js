@@ -10,6 +10,8 @@ export const SOCIAL_LINKS = {
 	LINKEDIN: "https://www.linkedin.com/in/npragin/",
 }
 
+    
+
 export const experience = [
 	{
 		id: 0,
