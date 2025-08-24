@@ -23,7 +23,7 @@ export const experience = [
 			"Blender",
 			"Gymnasium",
 		],
-    link: "https://engineering.oregonstate.edu/CoRIS",
+		link: "https://engineering.oregonstate.edu/CoRIS",
 	},
 	{
 		id: 1,
@@ -40,7 +40,7 @@ export const experience = [
 			"MQTT",
 			"React",
 		],
-    link: "https://sifly.co"
+		link: "https://sifly.co",
 	},
 	{
 		id: 2,
