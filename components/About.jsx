@@ -13,9 +13,11 @@ const About = () => {
                 &nbsp;and discovered the magic of programming.
                 Starting with basic scripting and game development, I explored web technologies before discovering my passion for software grounded in hardware experiences.
                 Since then, I&apos;ve engineered&nbsp;
-				<a className='text-slate-200 link-transition' href="https://www.clearscale.com/" target="_blank" rel="noreferrer">cloud solutions for enterprises</a>
-                , UAVs for agriculture, and&nbsp;
+				<a className='text-slate-200 link-transition' href="https://www.sifly.co" target="_blank" rel="noreferrer">UAVs for agriculture</a>
+				,&nbsp;
 				<a className='text-slate-200 link-transition' href="https://www.global-formula-racing.com/en/" target="_blank" rel="noreferrer">autonomous racecars</a>
+				, and&nbsp;
+				<a className='text-slate-200 link-transition' href="https://www.clearscale.com/" target="_blank" rel="noreferrer">cloud solutions for enterprises</a>
                 .
 			</p>
 			<p>
