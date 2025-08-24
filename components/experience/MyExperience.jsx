@@ -1,9 +1,9 @@
 import React from "react"
 import { useQuery } from "react-query"
 import axios from "axios"
-import ExperienceCard from "./ExperienceCard"
-import ParagraphSkeleton from "../common/cards/ParagraphSkeleton"
 import { ArrowUpRightIcon } from "lucide-react"
+import { ExperienceCard } from "@components"
+import { ParagraphSkeleton } from "@components"
 
 const MyExperience = () => {
 	const { isLoading, data } = useQuery("experience", () =>

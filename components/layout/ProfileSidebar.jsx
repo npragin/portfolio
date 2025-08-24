@@ -2,7 +2,7 @@ import React from "react"
 import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
-import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "../../constants/constants"
+import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "/constants"
 
 const ProfileSidebar = () => {
 	return (

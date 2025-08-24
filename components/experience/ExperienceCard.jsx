@@ -1,9 +1,8 @@
-import React from "react"
-import CardLayout from "../common/cards/CardLayout"
-import Tools from "./Tools"
-import { useState } from "react"
+import { React, useState } from "react"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
+import { CardLayout } from "@components"
+import { Tools } from "@components"
 
 const ExperienceCard = ({ data }) => {
 	const [isHovered, setIsHovered] = useState(false)

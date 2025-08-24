@@ -1,5 +1,5 @@
 import React from "react"
-import CardLayout from "./CardLayout"
+import { CardLayout } from "@components"
 
 const ParagraphSkeleton = ({ className }) => {
 	return (
