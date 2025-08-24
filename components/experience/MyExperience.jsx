@@ -1,9 +1,6 @@
 import React from "react"
-import { useQuery } from "@tanstack/react-query"
-import axios from "axios"
 import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { ExperienceCard } from "@components"
-import { ParagraphSkeleton } from "@components"
 import { experience } from "/constants"
 
 const MyExperience = () => {
