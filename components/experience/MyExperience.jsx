@@ -5,7 +5,7 @@ import { experience } from "/constants"
 
 const MyExperience = () => {
 	return (
-		<>
+		<section id="experience">
 			<div className="grid justify-items-center grid-flow-row m-1 gap-4 px-2 md:px-8">
 				{
 					experience.map((data, key) => (
@@ -24,7 +24,7 @@ const MyExperience = () => {
 					<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
 				</a>
 			</div>
-		</>
+		</section>
 	)
 }
 

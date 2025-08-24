@@ -38,7 +38,6 @@ export default function Layout({ children }) {
 			<SpotlightCursor />
 			<div className="min-h-screen flex flex-col font-circular">
 				<div className="flex relative justify-center gap-x-4">
-					<section id="about"></section>
 					{/* left column */}
 					<div className="w-full lg:w-1/3 sticky top-0 h-screen max-w-md flex flex-col">
 						<div className="lg:rounded-xl flex lg:flex flex-col h-full py-8">
