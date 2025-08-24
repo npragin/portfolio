@@ -13,7 +13,7 @@ const MyExperience = () => {
 					))
 				}
 			</div>
-			<div className="flex ml-10 mt-8 pb-24">
+			<div className="flex ml-10 mt-8">
 				<a
 					href="/resume.pdf"
 					target="_blank"
