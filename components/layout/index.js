@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { ProfileSidebar, Footer } from "@components"
+import { ProfileSidebar } from "@components"
 
 const SpotlightCursor = () => {
 	const [position, setPosition] = useState({ x: 0, y: 0 })
@@ -80,7 +80,6 @@ export default function Layout({ children }) {
 					{/* right column */}
 					<div className="w-full lg:w-1/2 max-w-2xl">
 						{children}
-						<Footer/>
 					</div>
 				</div>
 			</div>
