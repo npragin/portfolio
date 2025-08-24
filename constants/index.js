@@ -23,13 +23,14 @@ export const experience = [
 			"Blender",
 			"Gymnasium",
 		],
+    link: "https://engineering.oregonstate.edu/CoRIS",
 	},
 	{
 		id: 1,
 		title: "Software Engineer, Intern",
 		previousTitles: [],
 		date: "Jun - Sep 2024",
-		company: "Stealth Startup (Drones)",
+		company: "SiFly Aviation",
 		desc: "At this UAV startup, I collaborated with a diverse team to deliver safety-critical software and a cloud-based fleet management platform. I enabled ML analytics, improved network performance, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I contributed to meeting aggressive deadlines for the Alpha launch.",
 		tools: [
 			"Embedded Software",
@@ -39,6 +40,7 @@ export const experience = [
 			"MQTT",
 			"React",
 		],
+    link: "https://sifly.co"
 	},
 	{
 		id: 2,
