@@ -72,13 +72,13 @@ export default function Layout({ children }) {
 				<div className="flex relative justify-center gap-x-4">
 					{/* left column */}
 					<div className="w-full lg:w-1/3 sticky top-0 h-screen max-w-md flex flex-col">
-						<div className="lg:rounded-xl flex lg:flex flex-col h-full py-8">
+						<div className="lg:rounded-xl flex lg:flex flex-col h-full">
 							<ProfileSidebar activeSection={activeSection} />
 						</div>
 					</div>
 
 					{/* right column */}
-					<div className="w-full lg:w-1/2 pb-8 pt-20 max-w-2xl">
+					<div className="w-full lg:w-1/2 max-w-2xl">
 						{children}
 						<Footer/>
 					</div>

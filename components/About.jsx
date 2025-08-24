@@ -3,7 +3,7 @@ import React from "react"
 const About = () => {
 	return (
 		<section id="about">
-			<div className="grid justify-items-left grid-flow-row mx-12 gap-4 px-2 md:px-8 text-md text-slate-400 tracking-wide mb-20" >
+			<div className="grid justify-items-left grid-flow-row mx-12 pt-20 gap-4 px-2 md:px-8 text-md text-slate-400 tracking-wide" >
 				<p>Around 2012, I stumbled upon&nbsp;
 					<a className='text-slate-200 link-transition' href="https://www.codecademy.com/" target="_blank" rel="noreferrer">Codecademy</a>
 					&nbsp;and discovered the magic of programming.

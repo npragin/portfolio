@@ -6,9 +6,9 @@ import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "/constants"
 
 const ProfileSidebar = ({ activeSection }) => {
 	return (
-		<div className="flex flex-col h-full">
+		<div className="flex flex-col h-full pt-20">
 			{/* Header */}
-			<div className='headerr shrink-0 pt-14'>
+			<div className='header shrink-0'>
 				<div className='flex flex-col items-start justify-center'>
 					<span className='text-4xl font-bold text-slate-200 sm:text-5xl'>{NAME}</span>
 					<span className='mt-3 text-lg font-medium text-slate-200 sm:text-xl'>{DESIGNATION}</span>
