@@ -33,11 +33,11 @@ const SpotlightCursor = () => {
 }
 
 const useActiveSection = () => {
-	const [activeSection, setActiveSection] = useState('')
+	const [activeSection, setActiveSection] = useState("")
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const sections = ['about', 'experience']
+			const sections = ["about", "experience"]
 			const scrollPosition = window.scrollY + 100 // TODO(npragin): Remove after fixing padding issues?
 
 			for (const section of sections) {
@@ -45,7 +45,6 @@ const useActiveSection = () => {
 				if (element) {
 					const { offsetTop, offsetHeight } = element
 					if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            console.log(section)
 						setActiveSection(section)
 						break
 					}
@@ -55,8 +54,8 @@ const useActiveSection = () => {
 
 		handleScroll()
 
-		window.addEventListener('scroll', handleScroll)
-		return () => window.removeEventListener('scroll', handleScroll)
+		window.addEventListener("scroll", handleScroll)
+		return () => window.removeEventListener("scroll", handleScroll)
 	}, [])
 
 	return activeSection
