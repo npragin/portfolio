@@ -1,15 +1,15 @@
 import React from "react"
-import { useQuery } from "react-query"
+import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
 import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { ExperienceCard } from "@components"
 import { ParagraphSkeleton } from "@components"
 
 const MyExperience = () => {
-	const { isLoading, data } = useQuery("experience", () =>
-		axios.get("api/experience")
-			.then(({ data }) => data)
-			.catch())
+	const { isLoading, data } = useQuery({
+		queryKey: ["experience"],
+		queryFn: () => axios.get("api/experience").then(({ data }) => data),
+	})
 
 	return (
 		<>

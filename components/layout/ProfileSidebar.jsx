@@ -8,7 +8,7 @@ const ProfileSidebar = () => {
 	return (
 		<div className="flex flex-col h-full">
 			{/* Header */}
-			<div className='headerr flex-shrink-0 pt-14'>
+			<div className='headerr shrink-0 pt-14'>
 				<div className='flex flex-col items-start justify-center'>
 					<span className='text-4xl font-bold text-slate-200 sm:text-5xl'>{NAME}</span>
 					<span className='mt-3 text-lg font-medium text-slate-200 sm:text-xl'>{DESIGNATION}</span>
@@ -17,7 +17,7 @@ const ProfileSidebar = () => {
 			</div>
 
 			{/* Middle content */}
-			<nav className="nav flex-grow overflow-y-auto no-scrollbar" aria-label="In-page jump links">
+			<nav className="nav grow overflow-y-auto no-scrollbar" aria-label="In-page jump links">
 				<ul className="mt-16 w-max">
 					{["about", "experience"].map((section) => (
 						<li key={section}>
@@ -33,7 +33,7 @@ const ProfileSidebar = () => {
 			</nav>
 
 			{/* Footer */}
-			<div className='mt-auto pt-8 pb-16 flex-shrink-0'>
+			<div className='mt-auto pt-8 pb-16 shrink-0'>
 				<div className='text-slate-400 flex justify-start space-x-5 text-xl items-center'>
 					{[
 						{ icon: MdOutlineEmail, link: SOCIAL_LINKS.GMAIL },
