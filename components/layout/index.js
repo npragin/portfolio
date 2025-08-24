@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
-import { ProfileSidebar } from "@components"
-import { Footer } from "@components"
+import { ProfileSidebar, Footer } from "@components"
 
 const SpotlightCursor = () => {
 	const [position, setPosition] = useState({ x: 0, y: 0 })
