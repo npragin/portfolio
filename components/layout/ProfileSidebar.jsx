@@ -17,7 +17,7 @@ const ProfileSidebar = () => {
 			</div>
 
 			{/* Middle content */}
-			<nav className="nav grow overflow-y-auto no-scrollbar" aria-label="In-page jump links">
+			<nav className="nav grow overflow-y-auto" aria-label="In-page jump links">
 				<ul className="mt-16 w-max">
 					{["about", "experience"].map((section) => (
 						<li key={section}>
