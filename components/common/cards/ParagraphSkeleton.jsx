@@ -5,13 +5,12 @@ const ParagraphSkeleton = ({ className }) => {
 	return (
 
 		<CardLayout>
-			<div role="status" className={`${className} max-w-full card_stylings animate-pulse bg-violet-500/5 self-center`}>
-				<div className="h-2.5 rounded-full bg-slate-200 w-48 mb-4"></div>
-				<div className="h-2 rounded-full bg-slate-400 max-w-[365px] mb-2.5"></div>
-				<div className="h-2 rounded-full bg-slate-400 mb-2.5"></div>
-				<div className="h-2 rounded-full bg-slate-400 max-w-[330px] mb-2.5"></div>
-				<div className="h-2 rounded-full bg-slate-400 max-w-[400px] mb-2.5"></div>
-				<div className="h-2 rounded-full bg-slate-400 max-w-[360px]"></div>
+			<div role="status" className={`${className} flex flex-col items-end max-w-full card_stylings animate-pulse bg-violet-500/5 self-center`}>
+				<div className="skeleton-line"></div>
+				<div className="skeleton-line"></div>
+				<div className="skeleton-line"></div>
+				<div className="skeleton-line"></div>
+				<div className="skeleton-line"></div>
 				<span className="sr-only">Loading...</span>
 			</div>
 		</CardLayout>
