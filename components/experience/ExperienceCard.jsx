@@ -1,6 +1,6 @@
 import { React, useState } from "react"
 import Link from "next/link"
-import { ArrowUpRight } from "lucide-react"
+import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { CardLayout } from "@components"
 import { Tools } from "@components"
 

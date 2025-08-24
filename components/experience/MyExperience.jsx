@@ -1,7 +1,7 @@
 import React from "react"
 import { useQuery } from "react-query"
 import axios from "axios"
-import { ArrowUpRightIcon } from "lucide-react"
+import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { ExperienceCard } from "@components"
 import { ParagraphSkeleton } from "@components"
 
@@ -33,7 +33,7 @@ const MyExperience = () => {
 					className="flex items-center text-slate-200 link-transition cursor-pointer group"
 				>
 					<span className="mr-2">View Full R&eacute;sum&eacute;</span>
-					<ArrowUpRightIcon className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+					<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
 				</a>
 			</div>
 		</>
