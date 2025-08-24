@@ -4,7 +4,7 @@ import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa"
 import { LuMail as Mail } from "react-icons/lu"
 import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "/constants"
 
-const ProfileSidebar = () => {
+const ProfileSidebar = ({ activeSection }) => {
 	return (
 		<div className="flex flex-col h-full">
 			{/* Header */}
