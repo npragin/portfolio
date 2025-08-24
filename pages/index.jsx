@@ -1,6 +1,5 @@
 import Head from "next/head"
-import { MyExperience } from "@components"
-import { About } from "@components"
+import { About, MyExperience, Footer } from "@components"
 
 const home = () => {
 	return (
@@ -10,6 +9,7 @@ const home = () => {
 			</Head>
 			<About />
 			<MyExperience/>
+			<Footer/>
 		</div>
 	)
 }
