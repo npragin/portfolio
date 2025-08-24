@@ -99,6 +99,9 @@ body {
         }
       }
   }
+    .link-transition {
+      @apply hover:text-violet-500 transition-colors duration-300;
+    }
   /* antd css */
   .ant-progress-text{
     color:white !important

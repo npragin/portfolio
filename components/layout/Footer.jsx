@@ -20,11 +20,11 @@ const Footer = () => {
 				<p className="w-full">
                     Thank you for visiting my website,&nbsp;
 					<span className="peace-cursor-emoji group inline-block">
-						<span className="group-hover:text-violet-500 transition-colors duration-300 border-b border-violet-500">Peace</span>
+						<span className="link-transition duration-300 border-b border-violet-500">Peace</span>
 					</span>
                     &nbsp;and&nbsp;
 					<span className="love-cursor-emoji group inline-block">
-						<span className="group-hover:text-violet-500 transition-colors duration-300 border-b border-violet-500">Love</span>
+						<span className="link-transition border-b border-violet-500">Love</span>
 					</span>
                     .
 				</p>
