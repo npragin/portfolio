@@ -14,10 +14,10 @@ const ExperienceCard = ({ data }) => {
 			onMouseLeave={() => setIsHovered(false)}
 		>
 			{data.link && (
-				<div className="absolute top-2 right-2 transition-all">
+				<div className="absolute top-0 right-0 p-4 transition-all">
 					<ArrowUpRight
 						className={`transition-all ${
-							isHovered ? "text-violet-500 group-hover:translate-x-1 group-hover:-translate-y-1" : "text-slate-200"
+							isHovered ? "text-violet-500 translate-x-1 -translate-y-1" : "text-slate-200"
 						}`}
 						size={20}
 					/>
@@ -26,7 +26,7 @@ const ExperienceCard = ({ data }) => {
 			<div className="w-[25%] justify-center p-2 m-1">
 				<div className="text-slate-500 text-sm">{data.date}</div>
 			</div>
-			<div className="w-[75%] justify-center">
+			<div className="w-[75%] justify-center p-2">
 				<div className={`text-md tracking-wide transition-colors ${isHovered && data.link ? "text-violet-500" : "text-slate-200"}`}>
 					{`${data.title} • ${data.company}`}
 				</div>
