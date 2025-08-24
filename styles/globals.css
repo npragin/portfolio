@@ -24,13 +24,6 @@
   }
 }
 
-@utility skeleton-line {
-  @apply rounded-full bg-slate-400 mb-2.5 mr-4 h-2 w-96;
-  &:first-child {
-    @apply bg-slate-200 h-3;
-  }
-}
-
 @utility card_stylings {
   @layer components {
     @apply bg-transparent rounded-md hover:bg-linear-to-br hover:bg-violet-500/5;
