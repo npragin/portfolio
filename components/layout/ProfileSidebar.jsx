@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { MdOutlineEmail } from "react-icons/md"
+import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa"
+import { LuMail as Mail } from "react-icons/lu"
 import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "/constants"
 
 const ProfileSidebar = () => {
@@ -36,9 +36,9 @@ const ProfileSidebar = () => {
 			<div className='mt-auto pt-8 pb-16 shrink-0'>
 				<div className='text-slate-400 flex justify-start space-x-5 text-xl items-center'>
 					{[
-						{ icon: MdOutlineEmail, link: SOCIAL_LINKS.GMAIL },
-						{ icon: FaLinkedin, link: SOCIAL_LINKS.LINKEDIN },
-						{ icon: FaGithub, link: SOCIAL_LINKS.GITHUB },
+						{ icon: Mail, link: SOCIAL_LINKS.GMAIL },
+						{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN },
+						{ icon: Github, link: SOCIAL_LINKS.GITHUB },
 					].map(({ icon: Icon, link }, index) => (
 						<Link key={index} href={link} target='_blank' rel='noreferrer'>
 							<div className="transition-colors duration-300 hover:text-slate-200">
