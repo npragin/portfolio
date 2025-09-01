@@ -1,5 +1,7 @@
 import { defineConfig } from "eslint/config"
 import react from "eslint-plugin-react"
+import reactHooks from "eslint-plugin-react-hooks"
+import importPlugin from "eslint-plugin-import"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import js from "@eslint/js"
@@ -13,106 +15,117 @@ const compat = new FlatCompat({
 	allConfig: js.configs.all,
 })
 
-export default defineConfig([{
-	ignores: [".next/**"],
+export default defineConfig([
+	{
+		files: ["**/*.{js,jsx,ts,tsx}"],
+		ignores: [".next/**"],
 
-	extends: compat.extends("eslint:recommended", "plugin:react/recommended", "plugin:import/recommended", "next/core-web-vitals"),
+		extends: compat.extends(
+			"eslint:recommended", 
+			"plugin:react/recommended", 
+			"plugin:import/recommended", 
+			"next/core-web-vitals"
+		),
 
-	plugins: {
-		react,
-	},
+		plugins: {
+			react,
+			"react-hooks": reactHooks,
+			import: importPlugin,
+		},
 
-	languageOptions: {
-		ecmaVersion: 2021,
-		sourceType: "module",
+		languageOptions: {
+			ecmaVersion: 2021,
+			sourceType: "module",
 
-		parserOptions: {
-			ecmaFeatures: {
-				jsx: true,
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true,
+				},
 			},
 		},
-	},
 
-	settings: {
-		react: {
-			version: "detect",
-		},
-		"import/resolver": {
-			alias: {
-				map: [
-					["@components", "./components/index.js"],
-					["@styles", "./styles"],
-				],
-				extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
+		settings: {
+			react: {
+				version: "detect",
 			},
-			node: { extensions: [".js", ".jsx", ".ts", ".tsx", ".css"] },
+			"import/resolver": {
+				alias: {
+					map: [
+						["@components", "./components/index.js"],
+						["@styles", "./styles"],
+						["@constants", "./constants/index.js"],
+					],
+					extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
+				},
+				node: { extensions: [".js", ".jsx", ".ts", ".tsx", ".css"] },
+			},
 		},
-	},
 
-	rules: {
-		semi: ["error", "never"],
-		indent: ["error", "tab"],
-		"no-unused-vars": "error",
-		"no-unused-expressions": "error",
-		"no-unused-labels": "error",
-		"no-undef": "error",
-		quotes: ["error", "double"],
-		"react/react-in-jsx-scope": "off",
-		"react-hooks/rules-of-hooks": "error",
-		"react-hooks/exhaustive-deps": "warn",
-		"no-console": "warn",
-		"no-alert": "error",
-		eqeqeq: ["error", "always"],
-		curly: ["error", "all"],
-		"brace-style": ["error", "1tbs"],
-		"block-spacing": "error",
-		"comma-dangle": ["error", "always-multiline"],
+		rules: {
+			semi: ["error", "never"],
+			indent: ["error", "tab"],
+			"no-unused-vars": "error",
+			"no-unused-expressions": "error",
+			"no-unused-labels": "error",
+			"no-undef": "error",
+			quotes: ["error", "double"],
+			"react/react-in-jsx-scope": "off",
+			"react-hooks/rules-of-hooks": "error",
+			"react-hooks/exhaustive-deps": "warn",
+			"no-console": "warn",
+			"no-alert": "error",
+			eqeqeq: ["error", "always"],
+			curly: ["error", "all"],
+			"brace-style": ["error", "1tbs"],
+			"block-spacing": "error",
+			"comma-dangle": ["error", "always-multiline"],
 
-		"comma-spacing": ["error", {
-			before: false,
-			after: true,
-		}],
+			"comma-spacing": ["error", {
+				before: false,
+				after: true,
+			}],
 
-		"comma-style": ["error", "last"],
-		"dot-notation": "error",
-		"func-call-spacing": ["error", "never"],
+			"comma-style": ["error", "last"],
+			"dot-notation": "error",
+			"func-call-spacing": ["error", "never"],
 
-		"key-spacing": ["error", {
-			beforeColon: false,
-			afterColon: true,
-		}],
+			"key-spacing": ["error", {
+				beforeColon: false,
+				afterColon: true,
+			}],
 
-		"keyword-spacing": ["error", {
-			before: true,
-			after: true,
-		}],
+			"keyword-spacing": ["error", {
+				before: true,
+				after: true,
+			}],
 
-		"no-multiple-empty-lines": ["error", {
-			max: 1,
-			maxEOF: 0,
-		}],
+			"no-multiple-empty-lines": ["error", {
+				max: 1,
+				maxEOF: 0,
+			}],
 
-		"no-trailing-spaces": "error",
-		"object-curly-spacing": ["error", "always"],
-		"prefer-const": "error",
-		"space-before-blocks": "error",
+			"no-trailing-spaces": "error",
+			"object-curly-spacing": ["error", "always"],
+			"prefer-const": "error",
+			"space-before-blocks": "error",
 
-		"space-before-function-paren": ["error", {
-			anonymous: "always",
-			named: "never",
-			asyncArrow: "always",
-		}],
+			"space-before-function-paren": ["error", {
+				anonymous: "always",
+				named: "never",
+				asyncArrow: "always",
+			}],
 
-		"space-in-parens": ["error", "never"],
-		"space-infix-ops": "error",
+			"space-in-parens": ["error", "never"],
+			"space-infix-ops": "error",
 
-		"arrow-spacing": ["error", {
-			before: true,
-			after: true,
-		}],
+			"arrow-spacing": ["error", {
+				before: true,
+				after: true,
+			}],
 
-		"no-var": "error",
-		"prefer-template": "error",
-		"template-curly-spacing": ["error", "never"],
-	},
-}])
+			"no-var": "error",
+			"prefer-template": "error",
+			"template-curly-spacing": ["error", "never"],
+		},
+	}
+])

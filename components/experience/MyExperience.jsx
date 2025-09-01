@@ -1,7 +1,7 @@
 import React from "react"
 import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { ExperienceCard } from "@components"
-import { experience } from "/constants"
+import { experience } from "@constants"
 
 const MyExperience = () => {
 	return (
@@ -11,7 +11,7 @@ const MyExperience = () => {
 					experience.map((data, key) => (
 						<ExperienceCard key={key} data={data} />
 					))
-				}
+				};
 			</div>
 			<div className="flex ml-10 mt-8">
 				<a

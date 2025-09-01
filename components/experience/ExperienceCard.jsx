@@ -1,8 +1,7 @@
 import { React, useState } from "react"
 import Link from "next/link"
 import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
-import { CardLayout } from "@components"
-import { Tools } from "@components"
+import { CardLayout, Tools } from "@components"
 
 const ExperienceCard = ({ data }) => {
 	const [isHovered, setIsHovered] = useState(false)
