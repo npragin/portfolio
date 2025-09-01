@@ -13,6 +13,21 @@ export const SOCIAL_LINKS = {
 export const experience = [
 	{
 		id: 0,
+		title: "Software Engineer, Intern",
+		previousTitles: [],
+		date: "Jun - Sep 2025",
+		company: "Anduril Industries",
+		desc: "I architected safety-critical behavior trees for UAV autonomy from the ground up, contributing foundational mission behaviors and fail-safe systems. I implemented embedded Rust middleware to enable seamless communication between autonomy and autopilot systems, and developed a high-performance state management system meeting strict real-time constraints for coordinate transformations and synchronized data fetching.",
+		tools: [
+			"Python",
+			"Rust",
+			"Behavior Trees",
+			"Embedded Software",
+		],
+		link: "https://www.anduril.com/",
+	},
+	{
+		id: 1,
 		title: "Undergraduate Research Assistant",
 		previousTitles: [],
 		date: "Sep 2024 - Present",
@@ -26,12 +41,12 @@ export const experience = [
 		link: "https://engineering.oregonstate.edu/CoRIS",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Software Engineer, Intern",
 		previousTitles: [],
 		date: "Jun - Sep 2024",
 		company: "SiFly Aviation",
-		desc: "At this UAV startup, I collaborated with a diverse team to deliver safety-critical software and a cloud-based fleet management platform. I enabled ML analytics, improved network performance, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I contributed to meeting aggressive deadlines for the Alpha launch.",
+		desc: "At this UAV startup, I contributed to SiFly's world record 3+ hour electric drone flight by delivering software across the full stack. I built a cloud-based fleet management platform, enabled ML analytics on telemetry, improved network performance for mission-critical data flow, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I helped meet aggressive Alpha launch deadlines.",
 		tools: [
 			"Embedded Software",
 			"Django",
@@ -43,7 +58,7 @@ export const experience = [
 		link: "https://sifly.co",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Autonomous Systems Engineer",
 		previousTitles: [],
 		date: "Feb 2024 - Present",
@@ -59,7 +74,7 @@ export const experience = [
 		link: "https://www.global-formula-racing.com/en/",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Application Developer",
 		previousTitles: ["Application Developer, Intern"],
 		date: "2022 — 2023",
@@ -75,7 +90,7 @@ export const experience = [
 		link: "https://www.clearscale.com/",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Software Intern",
 		previousTitles: [],
 		date: "Mar — May 2019",
@@ -91,7 +106,7 @@ export const experience = [
 		link: "https://tutree.com/",
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Swim Instructor",
 		previousTitles: [],
 		date: "May — Aug 2018",
