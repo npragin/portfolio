@@ -2,7 +2,7 @@ import React from "react"
 import Link from "next/link"
 import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa"
 import { LuMail as Mail } from "react-icons/lu"
-import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "/constants"
+import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "@constants"
 
 const ProfileSidebar = ({ activeSection }) => {
 	return (
@@ -20,30 +20,31 @@ const ProfileSidebar = ({ activeSection }) => {
 			<nav className="nav grow overflow-y-auto" aria-label="In-page jump links">
 				<ul className="mt-16 w-max">
 					{["about", "experience"].map((section) => {
-					const isActive = activeSection === section
+						const isActive = activeSection === section
 
-					return (
-						<li key={section}>
-							<a className="group flex items-center py-3" href={`#${section}`}>
-								<span className={`
+						return (
+							<li key={section}>
+								<a className="group flex items-center py-3" href={`#${section}`}>
+									<span className={`
 									mr-4 h-px transition-all duration-300 motion-reduce:transition-none
 									${isActive
-										? 'w-16 !bg-slate-200' 
-										: 'w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200'
-									}
+								? "w-16 !bg-slate-200"
+								: "w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+							}
 									`}></span>
-								<span className={`
+									<span className={`
 										text-xs font-bold uppercase tracking-widest transition-all duration-300
-										${isActive 
-											? 'text-slate-200' 
-											: 'text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200'
-										}
+										${isActive
+								? "text-slate-200"
+								: "text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+							}
 									`}>
-									{section}
-								</span>
-							</a>
-						</li>
-					)})}
+										{section}
+									</span>
+								</a>
+							</li>
+						)
+					})}
 				</ul>
 			</nav>
 
