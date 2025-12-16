@@ -27,27 +27,6 @@
 @utility card_stylings {
   @layer components {
     @apply bg-transparent rounded-md hover:bg-linear-to-br hover:bg-violet-500/5;
-
-    @font-face {
-      font-family: 'cascadia-normal';
-      src: url(/public/fonts/Cascadia.ttf);
-    }
-    @font-face {
-      font-family: 'circular-light';
-      src: url(/public/fonts/Circular-Light.otf);
-    }
-    @font-face {
-      font-family: 'circular-normal';
-      src: url(/public/fonts/Circular-Book.otf);
-    }
-    @font-face {
-      font-family: 'circular-medium';
-      src: url(/public/fonts/Circular-Medium.otf);
-    }
-    @font-face {
-      font-family: 'circular-bold';
-      src: url(/public/fonts/Circular-Bold.otf);
-    }
   }
 }
 
@@ -83,10 +62,6 @@
 
   @layer components {
     @font-face {
-      font-family: 'cascadia-normal';
-      src: url(/public/fonts/Cascadia.ttf);
-    }
-    @font-face {
       font-family: 'circular-light';
       src: url(/public/fonts/Circular-Light.otf);
     }
@@ -101,18 +76,6 @@
     @font-face {
       font-family: 'circular-bold';
       src: url(/public/fonts/Circular-Bold.otf);
-    }
-  }
-      
-  @keyframes scale-icon {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.06);
-    }
-    100% {
-      transform: scale(1);
     }
   }
 }
