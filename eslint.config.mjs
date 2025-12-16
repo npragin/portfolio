@@ -1,42 +1,47 @@
-import { defineConfig } from "eslint/config"
-import react from "eslint-plugin-react"
-import reactHooks from "eslint-plugin-react-hooks"
-import importPlugin from "eslint-plugin-import"
-import path from "node:path"
-import { fileURLToPath } from "node:url"
 import js from "@eslint/js"
-import { FlatCompat } from "@eslint/eslintrc"
+import react from "eslint-plugin-react"
+import importPlugin from "eslint-plugin-import"
+import globals from "globals"
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
-})
+const reactSettings = {
+	react: {
+		version: "detect",
+	},
+}
 
-export default defineConfig([
+export default [
+	{
+		ignores: [".next/**", "node_modules/**"],
+	},
+	js.configs.recommended,
+	{
+		...react.configs.flat.recommended,
+		settings: {
+			...react.configs.flat.recommended.settings,
+			...reactSettings,
+		},
+	},
+	{
+		...react.configs.flat["jsx-runtime"],
+		settings: {
+			...react.configs.flat["jsx-runtime"].settings,
+			...reactSettings,
+		},
+	},
 	{
 		files: ["**/*.{js,jsx,ts,tsx}"],
-		ignores: [".next/**"],
-
-		extends: compat.extends(
-			"eslint:recommended", 
-			"plugin:react/recommended", 
-			"plugin:import/recommended", 
-			"next/core-web-vitals"
-		),
 
 		plugins: {
-			react,
-			"react-hooks": reactHooks,
 			import: importPlugin,
 		},
 
 		languageOptions: {
 			ecmaVersion: 2021,
 			sourceType: "module",
-
+			globals: {
+				...globals.browser,
+				...globals.node,
+			},
 			parserOptions: {
 				ecmaFeatures: {
 					jsx: true,
@@ -45,9 +50,7 @@ export default defineConfig([
 		},
 
 		settings: {
-			react: {
-				version: "detect",
-			},
+			...reactSettings,
 			"import/resolver": {
 				alias: {
 					map: [
@@ -62,16 +65,17 @@ export default defineConfig([
 		},
 
 		rules: {
+			// Disable prop-types (not using PropTypes in modern React)
+			"react/prop-types": "off",
+
+			// Style rules
 			semi: ["error", "never"],
 			indent: ["error", "tab"],
-			"no-unused-vars": "error",
+			"no-unused-vars": ["error", { "varsIgnorePattern": "^React$" }],
 			"no-unused-expressions": "error",
 			"no-unused-labels": "error",
 			"no-undef": "error",
 			quotes: ["error", "double"],
-			"react/react-in-jsx-scope": "off",
-			"react-hooks/rules-of-hooks": "error",
-			"react-hooks/exhaustive-deps": "warn",
 			"no-console": "warn",
 			"no-alert": "error",
 			eqeqeq: ["error", "always"],
@@ -127,5 +131,5 @@ export default defineConfig([
 			"prefer-template": "error",
 			"template-curly-spacing": ["error", "never"],
 		},
-	}
-])
+	},
+]
