@@ -8,7 +8,7 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 
 	const cardContent = (
 		<div
-			className="flex h-full space-y-2 p-4 pt-1 card_stylings relative"
+			className={`flex h-full space-y-2 p-4 pt-1 card_stylings relative border-t transition-colors ${isHovered ? "border-slate-500/40" : "border-transparent"}`}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
