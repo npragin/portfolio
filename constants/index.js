@@ -117,3 +117,32 @@ export const experience = [
 		link: "https://www.mountainview.gov/our-city/departments/community-services/recreation/aquatics-pools/swim-lessons",
 	},
 ]
+
+export const projects = [
+	{
+		id: 0,
+		title: "Learning-Based AUV Docking",
+		desc: "Autonomous underwater vehicle (AUV) docking policies that maintain performance despite unseen, unpredictable dynamics.",
+		image: "/learning-based-docking.gif",
+		tags: ["NVIDIA Isaac Sim", "Deep RL", "Reward Shaping"],
+		link: "https://github.com/npragin/learning-based-docking",
+	},
+	{
+		id: 1,
+		title: "Informative Path Planning over MNIST Digits",
+		desc: "Combining classical robotics approaches with deep learning to navigate to the correct grid corner by exploring and identifying a hidden handwritten digit.",
+		image: "/mnist-exploration-robot.gif",
+		squareImage: true,
+		tags: ["Motion Planning", "Deep Learning", "Computer Vision"],
+		link: "https://github.com/npragin/mnist-exploration-robot",
+	},
+	{
+		id: 2,
+		title: "Autonomous Mapping of Unseen Environments",
+		desc: "Autonomous mapping system with a two-tier controller architecture for obstacle avoidance and exploration strategy. Independently developed an expanding wavefront frontier detection algorithm, later discovering it aligned with published research by Phillip Quin, et al.",
+		image: "/unseen-env-mapping.png",
+		squareImage: true,
+		tags: ["Motion Planning", "Real-Time Systems", "SLAM", "ROS"],
+		link: "https://github.com/npragin/unseen-env-mapping",
+	},
+]
