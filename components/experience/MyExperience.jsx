@@ -11,7 +11,7 @@ const MyExperience = () => {
 					experience.map((data, key) => (
 						<ExperienceCard key={key} data={data} />
 					))
-				};
+				}
 			</div>
 			<div className="flex ml-10 mt-8">
 				<a

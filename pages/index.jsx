@@ -3,7 +3,7 @@ import { About, MyExperience, Footer } from "@components"
 
 const home = () => {
 	return (
-		<div className="Home-Page -z-10 -">
+		<div className="-z-10">
 			<Head>
 				<title>Noah Pragin</title>
 			</Head>
