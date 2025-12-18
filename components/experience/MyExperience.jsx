@@ -21,7 +21,7 @@ const MyExperience = () => {
 					className="flex items-center text-slate-200 link-transition cursor-pointer group"
 				>
 					<span className="mr-2">View Full R&eacute;sum&eacute;</span>
-					<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+					<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.5" />
 				</a>
 			</div>
 		</section>

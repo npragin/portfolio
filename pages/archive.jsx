@@ -8,6 +8,7 @@ import { LuArrowUpRight as ArrowUpRight, LuArrowLeft as ArrowLeft } from "react-
 // TODO(npragin): Fix table header when scrolling, it should stick with a translucent background
 // TODO(npragin): Fix spacing around the content
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded
+// TODO(npragin): Why am I having to use different bottom margins on the ArrowUpRight icon?
 
 const Archive = () => {
 	// Sort projects by year (newest first)
@@ -78,7 +79,7 @@ const Archive = () => {
 												className="group inline-flex items-center gap-2 text-slate-400 hover:text-violet-500 transition-colors font-circular-normal text-sm"
 											>
 												{new URL(project.link).hostname.replace("www.", "")}
-												<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+												<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.75" />
 											</Link>
 										) : (
 											<span className="text-slate-600 text-sm">—</span>

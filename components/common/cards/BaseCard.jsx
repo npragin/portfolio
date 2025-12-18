@@ -12,22 +12,22 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
-			{data.link && (
-				<div className="absolute top-0 right-0 p-4 transition-all">
-					<ArrowUpRight
-						className={`transition-all ${
-							isHovered ? "text-violet-500 translate-x-1 -translate-y-1" : "text-slate-200"
-						}`}
-						size={20}
-					/>
-				</div>
-			)}
 			<div className="w-[25%] flex items-start justify-center p-2 m-1">
 				{typeof leftSection === "function" ? leftSection(isHovered) : leftSection}
 			</div>
 			<div className="w-[75%] justify-center p-2">
-				<div className={`text-md tracking-wide transition-colors ${isHovered && data.link ? "text-violet-500" : "text-slate-200"}`}>
-					{titleContent}
+				<div className="flex justify-between">
+					<div className={`text-md tracking-wide transition-colors ${isHovered && data.link ? "text-violet-500" : "text-slate-200"}`}>
+						{titleContent}
+					</div>
+					{data.link &&
+						<ArrowUpRight
+							className={`transition-all ${
+								isHovered ? "text-violet-500 translate-x-1 -translate-y-1" : "text-slate-200"
+							}`}
+							size={20}
+						/>
+					}
 				</div>
 				{previousTitles && (
 					<div className="text-slate-400 text-md tracking-wide">{previousTitles}</div>
