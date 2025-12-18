@@ -19,7 +19,7 @@ const ProfileSidebar = ({ activeSection }) => {
 			{/* Middle content */}
 			<nav className="nav grow overflow-y-auto" aria-label="In-page jump links">
 				<ul className="mt-16 w-max">
-					{["about", "experience"].map((section) => {
+					{["about", "experience", "projects"].map((section) => {
 						const isActive = activeSection === section
 
 						return (
