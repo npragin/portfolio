@@ -10,7 +10,7 @@ export const SOCIAL_LINKS = {
 	LINKEDIN: "https://www.linkedin.com/in/npragin/",
 }
 
-export const experience = [
+export const EXPERIENCE = [
 	{
 		id: 0,
 		title: "Software Engineer, Intern",
@@ -118,7 +118,9 @@ export const experience = [
 	},
 ]
 
-export const projects = [
+export const SELECTED_PROJECTS = [0, 1, 2]
+
+export const PROJECTS = [
 	{
 		id: 0,
 		title: "Learning-Based AUV Docking",
