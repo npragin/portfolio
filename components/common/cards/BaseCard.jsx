@@ -36,7 +36,9 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 					{data.desc}
 				</div>
 				{data[toolsKey] && (
-					<Tools tools={data[toolsKey]} />
+					<div className="pt-4">
+						<Tools tools={data[toolsKey]} />
+					</div>
 				)}
 			</div>
 		</div>
