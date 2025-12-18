@@ -10,5 +10,6 @@ export { default as MyProjects } from "./projects/MyProjects"
 export { default as ProjectCard } from "./projects/ProjectCard"
 
 export { default as Layout } from "./layout/index.js"
+export { default as ArchiveLayout } from "./layout/ArchiveLayout"
 export { default as ProfileSidebar } from "./layout/ProfileSidebar"
 export { default as Footer } from "./layout/Footer"
