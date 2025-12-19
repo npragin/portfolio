@@ -1,8 +1,10 @@
 import Link from "next/link"
 import { Github, Linkedin, Mail } from "@icons"
-import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB } from "@constants"
+import { NAME, DESIGNATION, SOCIAL_LINKS, BLURB, SECTIONS } from "@constants"
+import { useActiveSection } from "@hooks"
 
-const ProfileSidebar = ({ activeSection }) => {
+const ProfileSidebar = () => {
+	const activeSection = useActiveSection()
 	return (
 		<div className="flex flex-col h-full pt-20">
 			{/* Header */}
@@ -17,7 +19,7 @@ const ProfileSidebar = ({ activeSection }) => {
 			{/* Middle content */}
 			<nav className="nav grow overflow-y-auto" aria-label="In-page jump links">
 				<ul className="mt-16 w-max">
-					{["about", "experience", "projects"].map((section) => {
+					{SECTIONS.map((section) => {
 						const isActive = activeSection === section
 
 						return (

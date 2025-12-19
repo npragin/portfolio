@@ -7,6 +7,7 @@ import { ArrowLeft } from "@icons"
 // TODO(npragin): Fix spacing around the main content on all pages
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded
 // TODO(npragin): view full resume and project archive links are too close to the left edge (compare against card left edge)
+// TODO(npragin): reduce tools padding-x to 2?
 
 const Archive = () => {
 	// Sort projects by year (newest first)

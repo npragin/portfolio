@@ -1,3 +1,5 @@
+export const SECTIONS = ["about", "experience", "projects"]
+
 export const NAME = "Noah Pragin"
 
 export const DESIGNATION = "C.S. @ Oregon State University"

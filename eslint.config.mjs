@@ -56,6 +56,7 @@ export default [
 					map: [
 						["@components", "./components/index.js"],
 						["@icons", "./components/common/icons.js"],
+						["@hooks", "./hooks/index.js"],
 						["@styles", "./styles"],
 						["@constants", "./constants/index.js"],
 					],
