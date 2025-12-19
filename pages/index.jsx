@@ -8,9 +8,9 @@ const Home = () => {
 				<title>Noah Pragin</title>
 			</Head>
 			<About />
-			<MyExperience/>
-			<MyProjects/>
-			<Footer/>
+			<MyExperience />
+			<MyProjects />
+			<Footer />
 		</div>
 	)
 }
