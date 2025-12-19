@@ -24,10 +24,6 @@
   }
 }
 
-@utility card_stylings {
-  @apply bg-transparent rounded-lg hover:bg-linear-to-br hover:bg-violet-500/5;
-}
-
 @utility no-scrollbar {
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
