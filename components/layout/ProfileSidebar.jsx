@@ -50,11 +50,11 @@ const ProfileSidebar = ({ activeSection }) => {
 			<div className='mt-auto pt-8 pb-16 shrink-0'>
 				<div className='text-slate-400 flex justify-start space-x-5 text-xl items-center'>
 					{[
-						{ icon: Mail, link: SOCIAL_LINKS.GMAIL },
-						{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN },
-						{ icon: Github, link: SOCIAL_LINKS.GITHUB },
-					].map(({ icon: Icon, link }, index) => (
-						<Link key={index} href={link} target='_blank' rel='noreferrer'>
+						{ icon: Mail, link: SOCIAL_LINKS.GMAIL, label: "Email" },
+						{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN, label: "LinkedIn" },
+						{ icon: Github, link: SOCIAL_LINKS.GITHUB, label: "GitHub" },
+					].map(({ icon: Icon, link, label }) => (
+						<Link key={link} href={link} target="_blank" rel="noopener noreferrer" aria-label={label}>
 							<div className="transition-colors duration-300 hover:text-slate-200">
 								<Icon size={24} />
 							</div>
