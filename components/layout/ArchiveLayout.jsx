@@ -1,4 +1,4 @@
-import BaseLayout from "@components"
+import { BaseLayout } from "@components"
 
 export default function ArchiveLayout({ children }) {
 	return (
