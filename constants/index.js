@@ -16,7 +16,7 @@ export const EXPERIENCE = [
 	{
 		id: 0,
 		title: "Software Engineer, Intern",
-		date: "Jun - Sep 2025",
+		date: "Jun — Sep 2025",
 		company: "Anduril Industries",
 		desc: "I architected safety-critical behavior trees for UAV autonomy from the ground up, contributing foundational mission behaviors and fail-safe systems. I implemented embedded Rust middleware to enable seamless communication between autonomy and autopilot systems, and developed a high-performance state management system meeting strict real-time constraints for coordinate transformations and synchronized data fetching.",
 		tools: [
@@ -30,7 +30,7 @@ export const EXPERIENCE = [
 	{
 		id: 1,
 		title: "Undergraduate Research Assistant",
-		date: "Sep 2024 - Present",
+		date: "Sep 2024 — Present",
 		company: "CoRIS Institute",
 		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim2real with better synthetic orchard data using Blender. Separately, I've implemented neural networks for point clouds as a preprocessing step for RL training and contrasted their effects on real-to-sim transfer performance for robotic pick-and-place tasks.",
 		tools: [
@@ -45,7 +45,7 @@ export const EXPERIENCE = [
 	{
 		id: 2,
 		title: "Software Engineer, Intern",
-		date: "Jun - Sep 2024",
+		date: "Jun — Sep 2024",
 		company: "SiFly Aviation",
 		desc: "At this UAV startup, I contributed to SiFly's world record 3+ hour electric drone flight by delivering software across the full stack. I built a cloud-based fleet management platform, enabled ML analytics on telemetry, improved network performance for mission-critical data flow, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I helped meet aggressive Alpha launch deadlines.",
 		tools: [
@@ -61,7 +61,7 @@ export const EXPERIENCE = [
 	{
 		id: 3,
 		title: "Autonomous Systems Engineer",
-		date: "Feb 2024 - Present",
+		date: "Feb 2024 — Present",
 		company: "Global Formula Racing",
 		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumni and faculty advisors to prepare our vehicle for global competitions.",
 		tools: [
