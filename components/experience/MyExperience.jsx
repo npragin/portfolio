@@ -1,5 +1,5 @@
-import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { ExperienceCard } from "@components"
+import { ArrowUpRight } from "@icons"
 import { EXPERIENCE } from "@constants"
 
 const MyExperience = () => {

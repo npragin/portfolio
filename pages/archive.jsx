@@ -2,7 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 import { PROJECTS } from "@constants"
 import { ArchiveLayout, Tools } from "@components"
-import { LuArrowUpRight as ArrowUpRight, LuArrowLeft as ArrowLeft } from "react-icons/lu"
+import { ArrowUpRight, ArrowLeft } from "@icons"
 
 // TODO(npragin): Fix spacing around the main content on all pages
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded

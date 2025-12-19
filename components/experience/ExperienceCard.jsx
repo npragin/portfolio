@@ -1,4 +1,4 @@
-import BaseCard from "../common/cards/BaseCard"
+import { BaseCard } from "@components"
 
 const ExperienceCard = ({ data }) => {
 	const leftSection = (

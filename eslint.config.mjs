@@ -55,6 +55,7 @@ export default [
 				alias: {
 					map: [
 						["@components", "./components/index.js"],
+						["@icons", "./components/common/icons.js"],
 						["@styles", "./styles"],
 						["@constants", "./constants/index.js"],
 					],

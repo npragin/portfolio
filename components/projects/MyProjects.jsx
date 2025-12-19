@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ProjectCard } from "@components"
+import { ArrowRight } from "@icons"
 import { PROJECTS, SELECTED_PROJECTS } from "@constants"
-import { LuArrowRight as ArrowRight } from "react-icons/lu"
 
 const MyProjects = () => {
 	return (

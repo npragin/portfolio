@@ -1,5 +1,5 @@
 import Image from "next/image"
-import BaseCard from "../common/cards/BaseCard"
+import { BaseCard } from "@components"
 
 const ProjectCard = ({ data }) => {
 	const aspectClass = data.squareImage ? "aspect-square" : "aspect-video"
