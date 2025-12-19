@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { CardLayout, Tools } from "@components"
+import { Tools } from "@components"
 import { ArrowUpRight } from "@icons"
 
 const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = "tools" }) => {
@@ -46,14 +46,12 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 	if (data.link) {
 		return (
 			<a href={data.link} target="_blank" rel="noopener noreferrer">
-				<CardLayout className="cursor-pointer">
-					{cardContent}
-				</CardLayout>
+				{cardContent}
 			</a>
 		)
 	}
 
-	return <CardLayout>{cardContent}</CardLayout>
+	return cardContent
 }
 
 export default BaseCard

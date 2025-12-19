@@ -3,7 +3,6 @@ export { default as About } from "./About"
 export { default as SpotlightCursor } from "./common/SpotlightCursor"
 export { default as ArrowLink } from "./common/ArrowLink"
 
-export { default as CardLayout } from "./common/cards/CardLayout"
 export { default as BaseCard } from "./common/cards/BaseCard"
 
 export { default as MyExperience } from "./experience/MyExperience"
