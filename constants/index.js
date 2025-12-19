@@ -10,7 +10,7 @@ export const SOCIAL_LINKS = {
 	LINKEDIN: "https://www.linkedin.com/in/npragin/",
 }
 
-export const experience = [
+export const EXPERIENCE = [
 	{
 		id: 0,
 		title: "Software Engineer, Intern",
@@ -118,7 +118,9 @@ export const experience = [
 	},
 ]
 
-export const projects = [
+export const SELECTED_PROJECTS = [0, 1, 2]
+
+export const PROJECTS = [
 	{
 		id: 0,
 		title: "Learning-Based AUV Docking",
@@ -126,6 +128,7 @@ export const projects = [
 		image: "/learning-based-docking.gif",
 		tags: ["NVIDIA Isaac Sim", "Deep RL", "Reward Shaping"],
 		link: "https://github.com/npragin/learning-based-docking",
+		year: "2025",
 	},
 	{
 		id: 1,
@@ -135,6 +138,7 @@ export const projects = [
 		squareImage: true,
 		tags: ["Motion Planning", "Deep Learning", "Computer Vision"],
 		link: "https://github.com/npragin/mnist-exploration-robot",
+		year: "2025",
 	},
 	{
 		id: 2,
@@ -144,5 +148,6 @@ export const projects = [
 		squareImage: true,
 		tags: ["Motion Planning", "Real-Time Systems", "SLAM", "ROS"],
 		link: "https://github.com/npragin/unseen-env-mapping",
+		year: "2024",
 	},
 ]

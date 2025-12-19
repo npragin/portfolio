@@ -37,7 +37,7 @@ const useActiveSection = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const sections = ["about", "experience"]
+			const sections = ["about", "experience", "projects"]
 			const scrollPosition = window.scrollY + 100 // TODO(npragin): Remove after fixing padding issues?
 
 			for (const section of sections) {
