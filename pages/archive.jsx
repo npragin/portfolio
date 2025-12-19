@@ -4,7 +4,6 @@ import { PROJECTS } from "@constants"
 import { ArchiveLayout, Tools } from "@components"
 import { LuArrowUpRight as ArrowUpRight, LuArrowLeft as ArrowLeft } from "react-icons/lu"
 
-// TODO(npragin): Fix table header when scrolling, it should stick with a translucent background
 // TODO(npragin): Fix spacing around the content
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded
 // TODO(npragin): Why am I having to use different bottom margins on the ArrowUpRight icon?
@@ -34,20 +33,20 @@ const Archive = () => {
 				<h1 className="text-4xl font-bold md:text-5xl text-slate-200 mb-2">
 					All Projects
 				</h1>
-				<div className="mt-12 overflow-x-auto">
+				<div className="mt-12">
 					<table className="w-full border-collapse">
-						<thead>
-							<tr className="border-b border-slate-700/30">
-								<th className="text-left py-3 px-4 text-sm font-circular-normal text-slate-200">
+						<thead className="sticky top-0 z-10">
+							<tr className="border-b border-slate-700/30 backdrop-blur-sm">
+								<th className="text-left py-4 px-4 text-sm font-circular-normal text-slate-200">
 									Year
 								</th>
-								<th className="text-left py-3 px-4 text-sm font-circular-medium text-slate-200">
+								<th className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
 									Project
 								</th>
-								<th className="text-left py-3 px-4 text-sm font-circular-medium text-slate-200">
+								<th className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
 									Built with
 								</th>
-								<th className="text-left py-3 px-4 text-sm font-circular-medium text-slate-200">
+								<th className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
 									Link
 								</th>
 							</tr>
