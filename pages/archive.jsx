@@ -1,14 +1,14 @@
 import Head from "next/head"
 import Link from "next/link"
 import { PROJECTS } from "@constants"
-import { ArchiveLayout, Tools } from "@components"
-import { ArrowUpRight, ArrowLeft } from "@icons"
+import { ArchiveLayout, Tools, ArrowLink } from "@components"
+import { ArrowLeft } from "@icons"
 
 // TODO(npragin): Fix spacing around the main content on all pages
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded
-// TODO(npragin): Why am I having to use different bottom margins on the ArrowUpRight icon?
 // TODO(npragin): Move arrow icon to link component?
 // TODO(npragin): view full resume and project archive links are too close to the left edge (compare against card left edge)
+// TODO(npragin): Right align dates on experience cards
 
 const Archive = () => {
 	// Sort projects by year (newest first)
@@ -72,15 +72,12 @@ const Archive = () => {
 									</td>
 									<td className="py-4 px-4">
 										{project.link ? (
-											<Link
+											<ArrowLink
 												href={project.link}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="group inline-flex items-center gap-2 text-slate-400 hover:text-violet-500 transition-colors font-circular text-sm"
+												className="text-slate-400 hover:text-violet-500 transition-colors font-circular text-sm"
 											>
 												{new URL(project.link).hostname.replace("www.", "")}
-												<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.75" />
-											</Link>
+											</ArrowLink>
 										) : (
 											<span className="text-slate-600 text-sm">—</span>
 										)}

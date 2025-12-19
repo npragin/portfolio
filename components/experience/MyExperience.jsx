@@ -1,6 +1,4 @@
-import Link from "next/link"
-import { ExperienceCard } from "@components"
-import { ArrowUpRight } from "@icons"
+import { ExperienceCard, ArrowLink } from "@components"
 import { EXPERIENCE } from "@constants"
 
 const MyExperience = () => {
@@ -14,15 +12,12 @@ const MyExperience = () => {
 				}
 			</div>
 			<div className="flex ml-10 mt-8">
-				<Link
+				<ArrowLink
 					href="/resume.pdf"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center text-slate-200 link-transition cursor-pointer group"
+					className="text-slate-200 link-transition cursor-pointer"
 				>
-					<span className="mr-2">View Full R&eacute;sum&eacute;</span>
-					<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.5" />
-				</Link>
+					View Full R&eacute;sum&eacute;
+				</ArrowLink>
 			</div>
 		</section>
 	)
