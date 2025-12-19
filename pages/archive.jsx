@@ -6,9 +6,7 @@ import { ArrowLeft } from "@icons"
 
 // TODO(npragin): Fix spacing around the main content on all pages
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded
-// TODO(npragin): Move arrow icon to link component?
 // TODO(npragin): view full resume and project archive links are too close to the left edge (compare against card left edge)
-// TODO(npragin): Right align dates on experience cards
 
 const Archive = () => {
 	// Sort projects by year (newest first)
