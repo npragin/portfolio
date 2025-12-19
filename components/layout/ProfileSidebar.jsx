@@ -8,11 +8,11 @@ const ProfileSidebar = () => {
 	return (
 		<div className="flex flex-col h-full pt-20">
 			{/* Header */}
-			<div className='header shrink-0'>
-				<div className='flex flex-col items-start justify-center'>
-					<span className='text-4xl font-bold text-slate-200 sm:text-5xl'>{NAME}</span>
-					<span className='mt-3 text-lg font-medium text-slate-200 sm:text-xl'>{DESIGNATION}</span>
-					<span className='mt-4 max-w-xs tracking-wide text-slate-400'>{BLURB}</span>
+			<div className="header shrink-0">
+				<div className="flex flex-col items-start justify-center">
+					<span className="text-4xl font-bold text-slate-200 sm:text-5xl">{NAME}</span>
+					<span className="mt-3 text-lg font-medium text-slate-200 sm:text-xl">{DESIGNATION}</span>
+					<span className="mt-4 max-w-xs tracking-wide text-slate-400">{BLURB}</span>
 				</div>
 			</div>
 
@@ -49,8 +49,8 @@ const ProfileSidebar = () => {
 			</nav>
 
 			{/* Footer */}
-			<div className='mt-auto pt-8 pb-16 shrink-0'>
-				<div className='text-slate-400 flex justify-start space-x-5 text-xl items-center'>
+			<div className="mt-auto pt-8 pb-16 shrink-0">
+				<div className="text-slate-400 flex justify-start space-x-5 text-xl items-center">
 					{[
 						{ icon: Mail, link: SOCIAL_LINKS.GMAIL, label: "Email" },
 						{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN, label: "LinkedIn" },
