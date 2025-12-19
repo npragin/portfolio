@@ -4,11 +4,12 @@ import { PROJECTS } from "@constants"
 import { ArchiveLayout, Tools } from "@components"
 import { LuArrowUpRight as ArrowUpRight, LuArrowLeft as ArrowLeft } from "react-icons/lu"
 
-// TODO(npragin): Add link to archive page
 // TODO(npragin): Fix table header when scrolling, it should stick with a translucent background
 // TODO(npragin): Fix spacing around the content
 // TODO(npragin): Fix font for the table header, shouldn't be so bolded
 // TODO(npragin): Why am I having to use different bottom margins on the ArrowUpRight icon?
+// TODO(npragin): Move arrow icon to link component?
+// TODO(npragin): view full resume and project archive links are too close to the left edge (compare against card left edge)
 
 const Archive = () => {
 	// Sort projects by year (newest first)
