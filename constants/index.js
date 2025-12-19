@@ -32,7 +32,7 @@ export const EXPERIENCE = [
 		previousTitles: [],
 		date: "Sep 2024 - Present",
 		company: "CoRIS Institute",
-		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim2real with better synthetic orchard data using Blender. Seperately, I've implemented neural networks for point clouds as a preprocessing step for RL training and contrasted their effects on real-to-sim transfer performance for robotic pick-and-place tasks.",
+		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim2real with better synthetic orchard data using Blender. Separately, I've implemented neural networks for point clouds as a preprocessing step for RL training and contrasted their effects on real-to-sim transfer performance for robotic pick-and-place tasks.",
 		tools: [
 			"ROS",
 			"Blender",
@@ -65,7 +65,7 @@ export const EXPERIENCE = [
 		previousTitles: [],
 		date: "Feb 2024 - Present",
 		company: "Global Formula Racing",
-		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumnae and faculty advisors to prepare our vehicle for global competitions.",
+		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumni and faculty advisors to prepare our vehicle for global competitions.",
 		tools: [
 			"Embedded Software",
 			"ROS",
