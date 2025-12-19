@@ -11,6 +11,7 @@ export { default as Tools } from "./experience/Tools"
 
 export { default as Layout } from "./layout/index.js"
 export { default as ArchiveLayout } from "./layout/ArchiveLayout"
+export { default as BaseLayout } from "./layout/BaseLayout"
 export { default as ProfileSidebar } from "./layout/ProfileSidebar"
 export { default as Footer } from "./layout/Footer"
 

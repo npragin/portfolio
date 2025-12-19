@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { ProfileSidebar, SpotlightCursor } from "@components"
+import { ProfileSidebar, BaseLayout } from "@components"
 
 const useActiveSection = () => {
 	const [activeSection, setActiveSection] = useState("")
@@ -34,23 +34,20 @@ export default function Layout({ children }) {
 	const activeSection = useActiveSection()
 
 	return (
-		<>
-			<SpotlightCursor />
-			<div className="min-h-screen flex flex-col font-circular">
-				<div className="flex relative justify-center gap-x-4">
-					{/* left column */}
-					<div className="w-full lg:w-1/3 sticky top-0 h-screen max-w-md flex flex-col">
-						<div className="lg:rounded-xl flex lg:flex flex-col h-full">
-							<ProfileSidebar activeSection={activeSection} />
-						</div>
-					</div>
-
-					{/* right column */}
-					<div className="w-full lg:w-1/2 max-w-2xl">
-						{children}
+		<BaseLayout className="flex flex-col">
+			<div className="flex relative justify-center gap-x-4">
+				{/* left column */}
+				<div className="w-full lg:w-1/3 sticky top-0 h-screen max-w-md flex flex-col">
+					<div className="lg:rounded-xl flex lg:flex flex-col h-full">
+						<ProfileSidebar activeSection={activeSection} />
 					</div>
 				</div>
+
+				{/* right column */}
+				<div className="w-full lg:w-1/2 max-w-2xl">
+					{children}
+				</div>
 			</div>
-		</>
+		</BaseLayout>
 	)
 }
