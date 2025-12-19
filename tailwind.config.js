@@ -9,7 +9,6 @@ module.exports = {
 			fontFamily: {
 				"circular": ["circular-normal", "sans-serif"],
 				"circular-light": ["circular-light", "sans-serif"],
-				"circular-normal": ["circular-normal", "sans-serif"],
 				"circular-medium": ["circular-medium", "sans-serif"],
 				"circular-bold": ["circular-bold", "sans-serif"],
 			},

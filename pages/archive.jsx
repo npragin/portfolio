@@ -37,7 +37,7 @@ const Archive = () => {
 					<table className="w-full border-collapse">
 						<thead className="sticky top-0 z-10">
 							<tr className="border-b border-slate-700/30 backdrop-blur-sm">
-								<th scope="col" className="text-left py-4 px-4 text-sm font-circular-normal text-slate-200">
+								<th scope="col" className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
 									Year
 								</th>
 								<th scope="col" className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
@@ -57,11 +57,11 @@ const Archive = () => {
 									key={project.id}
 									className="border-b border-slate-700/50 transition-colors"
 								>
-									<td className="py-4 px-4 text-sm text-slate-400 font-circular-normal">
+									<td className="py-4 px-4 text-sm text-slate-400 font-circular">
 										{project.year}
 									</td>
 									<td className="py-4 px-4">
-										<span className="text-slate-200 font-circular-normal font-bold">
+										<span className="text-slate-200 font-circular font-bold">
 											{project.title}
 										</span>
 									</td>
@@ -76,7 +76,7 @@ const Archive = () => {
 												href={project.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="group inline-flex items-center gap-2 text-slate-400 hover:text-violet-500 transition-colors font-circular-normal text-sm"
+												className="group inline-flex items-center gap-2 text-slate-400 hover:text-violet-500 transition-colors font-circular text-sm"
 											>
 												{new URL(project.link).hostname.replace("www.", "")}
 												<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.75" />
