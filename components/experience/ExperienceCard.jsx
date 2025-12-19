@@ -13,7 +13,6 @@ const ExperienceCard = ({ data }) => {
 			leftSection={leftSection}
 			titleContent={titleContent}
 			previousTitles={data.previousTitles}
-			toolsKey="tools"
 		/>
 	)
 }
