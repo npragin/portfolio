@@ -11,7 +11,7 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
-			<div className="w-[25%] flex items-start justify-center p-2 m-1">
+			<div className="w-[25%] flex items-start justify-center p-2 mt-[1px]">
 				{typeof leftSection === "function" ? leftSection(isHovered) : leftSection}
 			</div>
 			<div className="w-[75%] justify-center p-2">
