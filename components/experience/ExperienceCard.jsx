@@ -1,4 +1,3 @@
-import React from "react"
 import BaseCard from "../common/cards/BaseCard"
 
 const ExperienceCard = ({ data }) => {

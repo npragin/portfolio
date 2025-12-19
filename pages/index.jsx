@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { About, MyExperience, MyProjects, Footer } from "@components"
 
-const home = () => {
+const Home = () => {
 	return (
 		<div className="-z-10">
 			<Head>
@@ -15,4 +15,4 @@ const home = () => {
 	)
 }
 
-export default home
+export default Home

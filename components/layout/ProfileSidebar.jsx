@@ -1,4 +1,3 @@
-import React from "react"
 import Link from "next/link"
 import { FaGithub as Github, FaLinkedin as Linkedin } from "react-icons/fa"
 import { LuMail as Mail } from "react-icons/lu"

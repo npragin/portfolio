@@ -1,4 +1,3 @@
-import React from "react"
 import Image from "next/image"
 import BaseCard from "../common/cards/BaseCard"
 

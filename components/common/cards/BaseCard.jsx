@@ -1,4 +1,4 @@
-import { React, useState } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { CardLayout, Tools } from "@components"

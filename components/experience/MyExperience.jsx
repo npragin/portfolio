@@ -1,4 +1,3 @@
-import React from "react"
 import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
 import { ExperienceCard } from "@components"
 import { EXPERIENCE } from "@constants"
@@ -8,8 +7,8 @@ const MyExperience = () => {
 		<section id="experience">
 			<div className="grid justify-items-center grid-flow-row m-1 gap-4 px-2 pt-20 md:px-8">
 				{
-					EXPERIENCE.map((data, key) => (
-						<ExperienceCard key={key} data={data} />
+					EXPERIENCE.map((data) => (
+						<ExperienceCard key={data.id} data={data} />
 					))
 				}
 			</div>
