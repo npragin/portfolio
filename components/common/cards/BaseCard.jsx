@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Link from "next/link"
 import { CardLayout, Tools } from "@components"
 import { ArrowUpRight } from "@icons"
 
@@ -46,11 +45,11 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 
 	if (data.link) {
 		return (
-			<Link href={data.link} target="_blank" rel="noopener noreferrer">
+			<a href={data.link} target="_blank" rel="noopener noreferrer">
 				<CardLayout className="cursor-pointer">
 					{cardContent}
 				</CardLayout>
-			</Link>
+			</a>
 		)
 	}
 
