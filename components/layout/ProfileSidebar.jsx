@@ -52,8 +52,8 @@ const ProfileSidebar = () => {
 			<ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
 				{[
 					{ icon: Mail, link: SOCIAL_LINKS.GMAIL, label: "Email" },
-					{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN, label: "LinkedIn" },
 					{ icon: Github, link: SOCIAL_LINKS.GITHUB, label: "GitHub" },
+					{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN, label: "LinkedIn" },
 				].map(({ icon: Icon, link, label }) => (
 					<li key={link} className="mr-5 text-xs shrink-0">
 						<Link href={link} target="_blank" rel="noopener noreferrer" aria-label={label} className="block text-slate-400 hover:text-slate-200 transition-colors duration-300">
