@@ -7,16 +7,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"inter": ["Inter", "sans-serif"],
-				"inter-light": ["Inter", "sans-serif"],
-				"inter-medium": ["Inter", "sans-serif"],
-				"inter-bold": ["Inter", "sans-serif"],
-			},
-			fontWeight: {
-				"light": 300,
-				"normal": 400,
-				"medium": 500,
-				"bold": 700,
+				"sans": ["Inter", "system-ui", "sans-serif"],
 			},
 			colors: {
 				"primary": "#12172e",

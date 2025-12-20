@@ -8,12 +8,12 @@ const ProfileSidebar = () => {
 	return (
 		<>
 			{/* Header */}
-			<div className="header shrink-0">
-				<div className="flex flex-col items-start justify-center">
-					<span className="text-4xl font-bold text-slate-200 sm:text-5xl">{NAME}</span>
-					<span className="mt-3 text-lg font-medium text-slate-200 sm:text-xl">{DESIGNATION}</span>
-					<span className="mt-4 max-w-xs tracking-wide text-slate-400">{BLURB}</span>
-				</div>
+			<div>
+				<h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+					<Link href="/">{NAME}</Link>
+				</h1>
+				<h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">{DESIGNATION}</h2>
+				<p className="mt-4 max-w-xs leading-normal text-slate-400">{BLURB}</p>
 			</div>
 
 			{/* Middle content */}
