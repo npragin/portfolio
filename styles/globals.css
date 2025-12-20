@@ -37,20 +37,18 @@
 
 @layer base {
   @font-face {
-    font-family: 'circular-light';
-    src: url(/fonts/Circular-Light.otf);
+    font-family: 'Inter';
+    src: url(/fonts/Inter-VariableFont_opsz,wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
   }
   @font-face {
-    font-family: 'circular-normal';
-    src: url(/fonts/Circular-Book.otf);
-  }
-  @font-face {
-    font-family: 'circular-medium';
-    src: url(/fonts/Circular-Medium.otf);
-  }
-  @font-face {
-    font-family: 'circular-bold';
-    src: url(/fonts/Circular-Bold.otf);
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Italic-VariableFont_opsz,wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
   }
 
   html {
