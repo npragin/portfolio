@@ -23,9 +23,9 @@ const SpotlightCursor = () => {
 				top: 0,
 				width: "100vw",
 				height: "100vh",
-				background: `radial-gradient(circle 800px at ${position.x}px ${position.y}px, 
-					rgba(63, 79, 162, .15) 0%, 
-					rgba(18,23,46,0) 70%)`,
+				background: `radial-gradient(circle var(--spotlight-radius) at ${position.x}px ${position.y}px, 
+					var(--spotlight-color) 0%, 
+					var(--spotlight-bg) 70%)`,
 			}}
 		/>
 	)

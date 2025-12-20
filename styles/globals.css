@@ -58,7 +58,10 @@
   }
 
   body {
-    background-color: #12172e !important;
+    @apply bg-primary;
+    --spotlight-radius: 800px;
+    --spotlight-color: rgba(63, 79, 162, 0.15);
+    --spotlight-bg: rgba(18, 23, 46, 0);
   }
 
   ::selection {
