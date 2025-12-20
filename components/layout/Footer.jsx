@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+		<footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0 font-light">
 			<p>
 				Inspired by&nbsp;
 				<a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Brittany Chiang</a>
