@@ -9,78 +9,66 @@ const Archive = () => {
 	const sortedProjects = [...PROJECTS].sort((a, b) => parseInt(b.year) - parseInt(a.year))
 
 	return (
-		<div className="min-h-screen">
+		<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
 			<Head>
 				<title>Archive | Noah Pragin</title>
 			</Head>
-			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+			<div className="lg:py-24">
 				<Link
 					href="/"
-					className="group inline-flex items-center gap-2 text-violet-500 font-inter-medium font-medium font-bold"
+					className="group mb-2 inline-flex items-center font-semibold leading-tight text-violet-500"
 				>
 					<ArrowLeft
 						size={16}
-						className="transition-transform group-hover:-translate-x-1 -translate-y-px"
+						className="mr-1 transition-transform group-hover:-translate-x-2"
 					/>
 					Noah Pragin
 				</Link>
-				<h1 className="text-4xl font-bold md:text-5xl text-slate-200 mb-2">
+				<h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
 					All Projects
 				</h1>
-				<div className="mt-12">
-					<table className="w-full border-collapse">
-						<thead className="sticky top-0 z-10">
-							<tr className="border-b border-slate-700/30 backdrop-blur-sm">
-								<th scope="col" className="text-left py-4 px-4 text-sm font-inter-medium font-medium text-slate-200">
-									Year
-								</th>
-								<th scope="col" className="text-left py-4 px-4 text-sm font-inter-medium font-medium text-slate-200">
-									Project
-								</th>
-								<th scope="col" className="text-left py-4 px-4 text-sm font-inter-medium font-medium text-slate-200">
-									Built with
-								</th>
-								<th scope="col" className="text-left py-4 px-4 text-sm font-inter-medium font-medium text-slate-200">
-									Link
-								</th>
+				<table className="mt-12 w-full border-collapse text-left">
+					<thead className="sticky top-0 z-10 border-b border-slate-300/10 backdrop-blur">
+						<tr>
+							<th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
+							<th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
+							<th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">Built with</th>
+							<th className="hidden py-4 text-sm font-semibold text-slate-200 sm:table-cell">Link</th>
+						</tr>
+					</thead>
+					<tbody>
+						{sortedProjects.map((project, index) => (
+							<tr
+								key={project.id}
+								className={`border-b border-slate-300/10 ${index === sortedProjects.length - 1 ? "border-none" : ""}`}
+							>
+								<td className="py-4 pr-4 align-top text-sm text-slate-500">
+									<div className="translate-y-px">{project.year}</div>
+								</td>
+								<td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
+									{project.title}
+								</td>
+								<td className="hidden py-4 pr-4 align-top lg:table-cell">
+									<ul className="flex -translate-y-1.5 flex-wrap">
+										<Tools tools={project.tags} />
+									</ul>
+								</td>
+								<td className="hidden py-4 align-top sm:table-cell">
+									{project.link ? (
+										<ArrowLink
+											href={project.link}
+											className="text-sm text-slate-400 hover:text-violet-500 focus-visible:text-violet-500"
+										>
+											{new URL(project.link).hostname.replace("www.", "")}
+										</ArrowLink>
+									) : (
+										<span className="text-slate-600 text-sm">—</span>
+									)}
+								</td>
 							</tr>
-						</thead>
-						<tbody>
-							{sortedProjects.map((project) => (
-								<tr
-									key={project.id}
-									className="border-b border-slate-700/50 transition-colors"
-								>
-									<td className="py-4 px-4 text-sm text-slate-400 font-inter">
-										{project.year}
-									</td>
-									<td className="py-4 px-4">
-										<span className="text-slate-200 font-inter font-bold">
-											{project.title}
-										</span>
-									</td>
-									<td className="py-4 px-4">
-										<div className="flex flex-wrap">
-											<Tools tools={project.tags} />
-										</div>
-									</td>
-									<td className="py-4 px-4">
-										{project.link ? (
-											<ArrowLink
-												href={project.link}
-												className="text-slate-400 hover:text-violet-500 transition-colors font-inter text-sm"
-											>
-												{new URL(project.link).hostname.replace("www.", "")}
-											</ArrowLink>
-										) : (
-											<span className="text-slate-600 text-sm">—</span>
-										)}
-									</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
+						))}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	)
