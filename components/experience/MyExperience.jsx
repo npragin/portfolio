@@ -5,12 +5,14 @@ const MyExperience = () => {
 	return (
 		<section id="experience" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24">
 			<SectionHeader>Experience</SectionHeader>
-			<div className="grid grid-flow-row gap-4">
-				{
-					EXPERIENCE.map((data) => (
-						<ExperienceCard key={data.id} data={data} />
-					))
-				}
+			<div>
+				<ol className="group/list">
+					{
+						EXPERIENCE.map((data) => (
+							<ExperienceCard key={data.id} data={data} />
+						))
+					}
+				</ol>
 			</div>
 			<div className="mt-12">
 				<ArrowLink

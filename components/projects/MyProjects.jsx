@@ -7,13 +7,15 @@ const MyProjects = () => {
 	return (
 		<section id="projects" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24">
 			<SectionHeader>Projects</SectionHeader>
-			<div className="grid grid-flow-row gap-4">
-				{
-					SELECTED_PROJECTS.map((projectId) => {
-						const project = PROJECTS.find(p => p.id === projectId)
-						return <ProjectCard key={project.id} data={project} />
-					})
-				}
+			<div>
+				<ol className="group/list">
+					{
+						SELECTED_PROJECTS.map((projectId) => {
+							const project = PROJECTS.find(p => p.id === projectId)
+							return <ProjectCard key={project.id} data={project} />
+						})
+					}
+				</ol>
 			</div>
 			<div className="mt-12">
 				<Link
