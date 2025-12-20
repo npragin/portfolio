@@ -46,7 +46,25 @@ const Archive = () => {
 									<div className="translate-y-px">{project.year}</div>
 								</td>
 								<td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
-									{project.title}
+									<div>
+										{/* Mobile: title as link */}
+										<div className="block sm:hidden">
+											{project.link ? (
+												<ArrowLink
+													href={project.link}
+													className="hover:text-violet-500 focus-visible:text-violet-500"
+												>
+													{project.title}
+												</ArrowLink>
+											) : (
+												project.title
+											)}
+										</div>
+										{/* Desktop: plain title */}
+										<div className="hidden sm:block">
+											{project.title}
+										</div>
+									</div>
 								</td>
 								<td className="hidden py-4 pr-4 align-top lg:table-cell">
 									<ul className="flex -translate-y-1.5 flex-wrap">
@@ -58,6 +76,7 @@ const Archive = () => {
 										<ArrowLink
 											href={project.link}
 											className="text-sm text-slate-400 hover:text-violet-500 focus-visible:text-violet-500"
+											iconSize={14}
 										>
 											{new URL(project.link).hostname.replace("www.", "")}
 										</ArrowLink>
