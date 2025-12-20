@@ -5,7 +5,7 @@ const ExperienceCard = ({ data }) => {
 		<div className="text-slate-500 text-sm text-left w-full">{data.date}</div>
 	)
 
-	const titleContent = `${data.title} • ${data.company}`
+	const titleContent = `${data.title} · ${data.company}`
 
 	return (
 		<BaseCard
