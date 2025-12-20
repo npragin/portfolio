@@ -6,7 +6,7 @@ import { useActiveSection } from "@hooks"
 const ProfileSidebar = () => {
 	const activeSection = useActiveSection()
 	return (
-		<div className="flex flex-col h-full pt-20">
+		<>
 			{/* Header */}
 			<div className="header shrink-0">
 				<div className="flex flex-col items-start justify-center">
@@ -17,7 +17,7 @@ const ProfileSidebar = () => {
 			</div>
 
 			{/* Middle content */}
-			<nav className="nav grow overflow-y-auto" aria-label="In-page jump links">
+			<nav className="nav hidden lg:block" aria-label="In-page jump links">
 				<ul className="mt-16 w-max">
 					{SECTIONS.map((section) => {
 						const isActive = activeSection === section
@@ -48,23 +48,21 @@ const ProfileSidebar = () => {
 				</ul>
 			</nav>
 
-			{/* Footer */}
-			<div className="mt-auto pt-8 pb-16 shrink-0">
-				<div className="text-slate-400 flex justify-start space-x-5 text-xl items-center">
-					{[
-						{ icon: Mail, link: SOCIAL_LINKS.GMAIL, label: "Email" },
-						{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN, label: "LinkedIn" },
-						{ icon: Github, link: SOCIAL_LINKS.GITHUB, label: "GitHub" },
-					].map(({ icon: Icon, link, label }) => (
-						<Link key={link} href={link} target="_blank" rel="noopener noreferrer" aria-label={label}>
-							<div className="transition-colors duration-300 hover:text-slate-200">
-								<Icon size={24} />
-							</div>
+			{/* Social links */}
+			<ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
+				{[
+					{ icon: Mail, link: SOCIAL_LINKS.GMAIL, label: "Email" },
+					{ icon: Linkedin, link: SOCIAL_LINKS.LINKEDIN, label: "LinkedIn" },
+					{ icon: Github, link: SOCIAL_LINKS.GITHUB, label: "GitHub" },
+				].map(({ icon: Icon, link, label }) => (
+					<li key={link} className="mr-5 text-xs shrink-0">
+						<Link href={link} target="_blank" rel="noopener noreferrer" aria-label={label} className="block text-slate-400 hover:text-slate-200 transition-colors duration-300">
+							<Icon size={24} />
 						</Link>
-					))}
-				</div>
-			</div>
-		</div>
+					</li>
+				))}
+			</ul>
+		</>
 	)
 }
 

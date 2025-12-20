@@ -1,17 +1,18 @@
-import { ExperienceCard, ArrowLink } from "@components"
+import { ExperienceCard, ArrowLink, SectionHeader } from "@components"
 import { EXPERIENCE } from "@constants"
 
 const MyExperience = () => {
 	return (
-		<section id="experience">
-			<div className="grid justify-items-center grid-flow-row m-1 gap-4 px-2 pt-20 md:px-8">
+		<section id="experience" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24">
+			<SectionHeader>Experience</SectionHeader>
+			<div className="grid grid-flow-row gap-4">
 				{
 					EXPERIENCE.map((data) => (
 						<ExperienceCard key={data.id} data={data} />
 					))
 				}
 			</div>
-			<div className="flex ml-10 mt-8">
+			<div className="mt-12">
 				<ArrowLink
 					href="/resume.pdf"
 					className="text-slate-200 link-transition cursor-pointer"

@@ -1,33 +1,28 @@
 const Footer = () => {
 	return (
-		<div className="mb-10 ml-10 mr-10 pb-16 pt-20">
-			<div className="flex flex-col h-10 items-center justify-between text-sm text-slate-400/70 md:px-4 w-full">
-				<p className="pb-4">
-					Inspired by&nbsp;
-					<a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Brittany Chiang</a>
-					&nbsp;and coded in&nbsp;
-					<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Visual Studio Code</a>
-					&nbsp;by yours truly.
-					Built with&nbsp;
-					<a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="footer-link">Next.js</a>
-					&nbsp;and&nbsp;
-					<a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Tailwind CSS</a>
-					, deployed with&nbsp;
-					<a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Vercel</a>.
-				</p>
-				<p className="w-full">
-                    Thank you for visiting my website,&nbsp;
-					<span className="peace-cursor-emoji group inline-block">
-						<span className="link-transition duration-300 border-b border-violet-500">Peace</span>
-					</span>
-                    &nbsp;and&nbsp;
-					<span className="love-cursor-emoji group inline-block">
-						<span className="link-transition border-b border-violet-500">Love</span>
-					</span>
-                    .
-				</p>
-			</div>
-		</div>
+		<footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+			<p>
+				Inspired by&nbsp;
+				<a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Brittany Chiang</a>
+				&nbsp;and coded in&nbsp;
+				<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Visual Studio Code</a>
+				&nbsp;by yours truly.
+				Built with&nbsp;
+				<a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="footer-link">Next.js</a>
+				&nbsp;and&nbsp;
+				<a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Tailwind CSS</a>
+				, deployed with&nbsp;
+				<a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Vercel</a>.
+				Thank you for visiting my website,&nbsp;
+				<span className="peace-cursor-emoji group inline-block">
+					<span className="link-transition duration-300 border-b border-violet-500">Peace</span>
+				</span>
+				&nbsp;and&nbsp;
+				<span className="love-cursor-emoji group inline-block">
+					<span className="link-transition border-b border-violet-500">Love</span>
+				</span>.
+			</p>
+		</footer>
 	)
 }
 

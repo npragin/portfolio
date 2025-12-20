@@ -2,6 +2,7 @@ export { default as About } from "./About"
 
 export { default as SpotlightCursor } from "./common/SpotlightCursor"
 export { default as ArrowLink } from "./common/ArrowLink"
+export { default as SectionHeader } from "./common/SectionHeader"
 
 export { default as BaseCard } from "./common/cards/BaseCard"
 

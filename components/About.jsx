@@ -1,7 +1,10 @@
+import { SectionHeader } from "@components"
+
 const About = () => {
 	return (
-		<section id="about">
-			<div className="grid justify-items-left grid-flow-row mx-12 pt-20 gap-4 px-2 md:px-8 text-md text-slate-400 tracking-wide" >
+		<section id="about" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24">
+			<SectionHeader>About</SectionHeader>
+			<div className="grid justify-items-left grid-flow-row gap-4 text-md text-slate-400 tracking-wide" >
 				<p>Around 2012, I stumbled upon&nbsp;
 					<a className="about-link" href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">Codecademy</a>
 					&nbsp;and discovered the magic of programming.
