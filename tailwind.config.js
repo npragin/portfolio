@@ -9,6 +9,12 @@ module.exports = {
 			fontFamily: {
 				"sans": ["Inter", "system-ui", "sans-serif"],
 			},
+			fontWeight: {
+				normal: 300,
+				medium: 400,
+				semibold: 500,
+				bold: 600,
+			},
 			colors: {
 				"primary": "#12172e",
 				"spotlight": "rgba(63, 79, 162, 0.15)",

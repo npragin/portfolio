@@ -18,7 +18,7 @@ const MyProjects = () => {
 			<div className="mt-12">
 				<Link
 					href="/archive"
-					className="group inline-flex items-center gap-2 text-slate-200 underline decoration-2 decoration-transparent hover:decoration-violet-500 underline-offset-4 transition-colors duration-300"
+					className="group inline-flex items-center gap-2 text-slate-200 underline decoration-2 decoration-transparent hover:decoration-violet-500 underline-offset-4 transition-colors duration-300 font-semibold"
 				>
 					View Full Project Archive
 					<ArrowRight

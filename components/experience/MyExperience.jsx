@@ -15,7 +15,7 @@ const MyExperience = () => {
 			<div className="mt-12">
 				<ArrowLink
 					href="/resume.pdf"
-					className="text-slate-200 link-transition cursor-pointer"
+					className="text-slate-200 link-transition cursor-pointer font-semibold"
 				>
 					View Full R&eacute;sum&eacute;
 				</ArrowLink>
