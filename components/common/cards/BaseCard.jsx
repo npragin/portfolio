@@ -43,7 +43,7 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 					{data.desc}
 				</p>
 				{data[toolsKey] && (
-					<ul className="mt-2 flex flex-wrap">
+					<ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
 						<Tools tools={data[toolsKey]} />
 					</ul>
 				)}

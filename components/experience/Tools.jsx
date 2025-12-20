@@ -1,15 +1,14 @@
-const Tools = ({ tools }) => {
+const Tools = ({ tools, compact = false }) => {
 	return (
-		<div className="flex flex-wrap gap-2">
+		<>
 			{tools.map((item) => (
-				<span
-					key={item}
-					className="py-2 px-3 text-xs text-violet-500 bg-violet-600/10 rounded-full"
-				>
-					{item}
-				</span>
+				<li key={item} className={compact ? "my-1 mr-1.5" : "mr-1.5 mt-2"}>
+					<div className="flex items-center rounded-full bg-violet-600/10 px-3 py-1 text-xs font-medium leading-5 text-violet-500">
+						{item}
+					</div>
+				</li>
 			))}
-		</div>
+		</>
 	)
 }
 

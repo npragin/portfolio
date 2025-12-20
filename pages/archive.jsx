@@ -68,7 +68,7 @@ const Archive = () => {
 								</td>
 								<td className="hidden py-4 pr-4 align-top lg:table-cell">
 									<ul className="flex -translate-y-1.5 flex-wrap">
-										<Tools tools={project.tags} />
+										<Tools tools={project.tags} compact />
 									</ul>
 								</td>
 								<td className="hidden py-4 align-top sm:table-cell">
