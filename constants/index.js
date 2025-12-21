@@ -114,11 +114,14 @@ export const EXPERIENCE = [
 	},
 ]
 
-export const SELECTED_PROJECTS = [0, 1, 2]
+export const SELECTED_PROJECTS = [
+	"Learning-Based AUV Docking",
+	"Informative Path Planning over MNIST Digits",
+	"Autonomous Mapping of Unseen Environments",
+]
 
 export const PROJECTS = [
 	{
-		id: 0,
 		title: "Learning-Based AUV Docking",
 		desc: "Autonomous underwater vehicle (AUV) docking policies that maintain performance despite unseen, unpredictable dynamics.",
 		image: "/learning-based-docking.gif",
@@ -127,7 +130,6 @@ export const PROJECTS = [
 		year: "2025",
 	},
 	{
-		id: 1,
 		title: "Informative Path Planning over MNIST Digits",
 		desc: "Combining classical robotics approaches with deep learning to navigate to the correct grid corner by exploring and identifying a hidden handwritten digit.",
 		image: "/mnist-exploration-robot.gif",
@@ -137,7 +139,6 @@ export const PROJECTS = [
 		year: "2025",
 	},
 	{
-		id: 2,
 		title: "Autonomous Mapping of Unseen Environments",
 		desc: "Autonomous mapping system with a two-tier controller architecture for obstacle avoidance and exploration strategy. Independently developed an expanding wavefront frontier detection algorithm, later discovering it aligned with published research by Phillip Quin, et al.",
 		image: "/unseen-env-mapping.png",

@@ -51,7 +51,7 @@ const Archive = () => {
 					<tbody>
 						{sortedProjects.map((project, index) => (
 							<tr
-								key={project.id}
+								key={project.title}
 								className={`border-b border-slate-300/10 ${index === sortedProjects.length - 1 ? "border-none" : ""}`}
 							>
 								<td className="py-4 pr-4 align-top text-sm text-slate-500">

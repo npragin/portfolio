@@ -10,9 +10,9 @@ const MyProjects = () => {
 			<div>
 				<ol className="group/list">
 					{
-						SELECTED_PROJECTS.map((projectId) => {
-							const project = PROJECTS.find(p => p.id === projectId)
-							return <ProjectCard key={project.id} data={project} />
+						SELECTED_PROJECTS.map((projectTitle) => {
+							const project = PROJECTS.find(p => p.title === projectTitle)
+							return <ProjectCard key={project.title} data={project} />
 						})
 					}
 				</ol>
