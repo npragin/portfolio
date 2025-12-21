@@ -1,6 +1,6 @@
 import { ProfileSidebar, BaseLayout } from "@components"
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
 	return (
 		<BaseLayout className="flex flex-col">
 			<div className="page-container">
@@ -16,3 +16,5 @@ export default function Layout({ children }) {
 		</BaseLayout>
 	)
 }
+
+export default Layout
