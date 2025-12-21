@@ -36,9 +36,9 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 						)}
 					</div>
 				</h3>
-				{previousTitles && (
-					<div className="text-slate-400 text-sm mt-0.5">{previousTitles}</div>
-				)}
+				{previousTitles?.map((title) => (
+					<div key={title} className="text-slate-400 text-sm mt-0.5">{title}</div>
+				))}
 				<p className="mt-2 text-sm leading-normal font-light text-slate-400">
 					{data.desc}
 				</p>
