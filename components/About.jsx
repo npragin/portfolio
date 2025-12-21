@@ -2,7 +2,7 @@ import { SectionHeader } from "@components"
 
 const About = () => {
 	return (
-		<section id="about" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24 font-light">
+		<section id="about" className="mb-16 md:mb-24 scroll-mt-24 font-light">
 			<SectionHeader>About</SectionHeader>
 			<div className="text-slate-400">
 				<p className="mb-4">

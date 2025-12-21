@@ -3,7 +3,7 @@ import { EXPERIENCE } from "@constants"
 
 const MyExperience = () => {
 	return (
-		<section id="experience" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24">
+		<section id="experience" className="mb-16 md:mb-24 scroll-mt-24">
 			<SectionHeader>Experience</SectionHeader>
 			<div>
 				<ol className="group/list">

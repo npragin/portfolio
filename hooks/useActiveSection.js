@@ -1,6 +1,9 @@
 import { useState, useEffect, useCallback } from "react"
 import { SECTIONS } from "@constants"
 
+// Matches scroll-mt-24 (6rem = 96px) used on section elements
+const SCROLL_OFFSET_PX = 96
+
 const useActiveSection = () => {
 	const [activeSection, setActiveSection] = useState(SECTIONS[0])
 
@@ -13,7 +16,7 @@ const useActiveSection = () => {
 				return false
 			}
 			const { offsetTop, offsetHeight } = element
-			return scrollY >= offsetTop && scrollY < offsetTop + offsetHeight
+			return scrollY + SCROLL_OFFSET_PX >= offsetTop && scrollY + SCROLL_OFFSET_PX < offsetTop + offsetHeight
 		})
 
 		if (current) {

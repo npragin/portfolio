@@ -5,7 +5,7 @@ import { PROJECTS, SELECTED_PROJECTS } from "@constants"
 
 const MyProjects = () => {
 	return (
-		<section id="projects" className="mb-16 md:mb-24 scroll-mt-16 lg:scroll-mt-24">
+		<section id="projects" className="mb-16 md:mb-24 scroll-mt-24">
 			<SectionHeader>Projects</SectionHeader>
 			<div>
 				<ol className="group/list">
