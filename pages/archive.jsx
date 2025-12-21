@@ -4,6 +4,14 @@ import { PROJECTS } from "@constants"
 import { ArchiveLayout, Tools, ArrowLink } from "@components"
 import { ArrowLeft } from "@icons"
 
+const getHostname = (url) => {
+	try {
+		return new URL(url).hostname.replace("www.", "")
+	} catch {
+		return url
+	}
+}
+
 const Archive = () => {
 	// Sort projects by year (newest first)
 	const sortedProjects = [...PROJECTS].sort((a, b) => parseInt(b.year) - parseInt(a.year))
@@ -78,7 +86,7 @@ const Archive = () => {
 											className="text-sm text-slate-400 hover:text-violet-500 focus-visible:text-violet-500"
 											iconSize={14}
 										>
-											{new URL(project.link).hostname.replace("www.", "")}
+											{getHostname(project.link)}
 										</ArrowLink>
 									) : (
 										<span className="text-slate-600 text-sm">—</span>
