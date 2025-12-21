@@ -3,6 +3,7 @@ import { BaseCard } from "@components"
 
 const ProjectCard = ({ data }) => {
 	const aspectClass = data.squareImage ? "aspect-square" : "aspect-video"
+	const isGif = data.image?.endsWith(".gif")
 
 	const leftSection = () => (
 		<div
@@ -10,9 +11,10 @@ const ProjectCard = ({ data }) => {
 		>
 			<Image
 				src={data.image}
-				alt={data.title}
+				alt={`Screenshot of ${data.title} project`}
 				fill
 				className="object-cover"
+				priority={isGif}
 			/>
 		</div>
 	)
