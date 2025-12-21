@@ -17,7 +17,7 @@ const Archive = () => {
 	const sortedProjects = [...PROJECTS].sort((a, b) => parseInt(b.year) - parseInt(a.year))
 
 	return (
-		<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+		<div className="page-container">
 			<Head>
 				<title>Archive | {NAME}</title>
 				<meta name="description" content={`All projects by ${NAME}`} />
