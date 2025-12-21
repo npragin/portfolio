@@ -16,7 +16,8 @@ export const EXPERIENCE = [
 	{
 		id: 0,
 		title: "Software Engineer, Intern",
-		date: "Jun — Sep 2025",
+		dateStart: "2025-06",
+		dateEnd: "2025-09",
 		company: "Anduril Industries",
 		desc: "I architected safety-critical behavior trees for UAV autonomy from the ground up, contributing foundational mission behaviors and fail-safe systems. I implemented embedded Rust middleware to enable seamless communication between autonomy and autopilot systems, and developed a high-performance state management system meeting strict real-time constraints for coordinate transformations and synchronized data fetching.",
 		tools: [
@@ -30,7 +31,8 @@ export const EXPERIENCE = [
 	{
 		id: 1,
 		title: "Undergraduate Research Assistant",
-		date: "Sep 2024 — Present",
+		dateStart: "2024-09",
+		dateEnd: "present",
 		company: "CoRIS Institute",
 		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim2real with better synthetic orchard data using Blender. Separately, I've implemented neural networks for point clouds as a preprocessing step for RL training and contrasted their effects on real-to-sim transfer performance for robotic pick-and-place tasks.",
 		tools: [
@@ -45,7 +47,8 @@ export const EXPERIENCE = [
 	{
 		id: 2,
 		title: "Software Engineer, Intern",
-		date: "Jun — Sep 2024",
+		dateStart: "2024-06",
+		dateEnd: "2024-09",
 		company: "SiFly Aviation",
 		desc: "At this UAV startup, I contributed to SiFly's world record 3+ hour electric drone flight by delivering software across the full stack. I built a cloud-based fleet management platform, enabled ML analytics on telemetry, improved network performance for mission-critical data flow, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I helped meet aggressive Alpha launch deadlines.",
 		tools: [
@@ -61,7 +64,8 @@ export const EXPERIENCE = [
 	{
 		id: 3,
 		title: "Autonomous Systems Engineer",
-		date: "Feb 2024 — Present",
+		dateStart: "2024-02",
+		dateEnd: "present",
 		company: "Global Formula Racing",
 		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumni and faculty advisors to prepare our vehicle for global competitions.",
 		tools: [
@@ -77,7 +81,8 @@ export const EXPERIENCE = [
 		id: 4,
 		title: "Application Developer",
 		previousTitles: ["Application Developer, Intern"],
-		date: "2022 — 2023",
+		dateStart: "2022",
+		dateEnd: "2023",
 		company: "ClearScale",
 		desc: "I developed a web application and RESTful API for monitoring cloud infrastructure in an agile team environment. Through client interviews and customer journey mapping, I drove a significant increase in customer enrollment. I consistently exceeded sprint goals, quickly resolved urgent issues, and effectively communicated progress to stakeholders.",
 		tools: [
@@ -92,7 +97,8 @@ export const EXPERIENCE = [
 	{
 		id: 5,
 		title: "Software Intern",
-		date: "Mar — May 2019",
+		dateStart: "2019-03",
+		dateEnd: "2019-05",
 		company: "Tutree",
 		desc: "As the team lead, I guided a group of interns through the full lifecycle of creating the company website. By setting project timelines, providing technical training, and leveraging analytics tools, I ensured we delivered an engaging site that met business objectives and deadlines.",
 		tools: [
@@ -107,7 +113,8 @@ export const EXPERIENCE = [
 	{
 		id: 6,
 		title: "Swim Instructor",
-		date: "May — Aug 2018",
+		dateStart: "2018-05",
+		dateEnd: "2018-08",
 		company: "City of Mountain View",
 		desc: "I taught swimming to children aged 6-16, including those with special needs. I brought energy, patience, and empathy to every lesson, qualities I strive to embody today.",
 		link: "https://www.mountainview.gov/our-city/departments/community-services/recreation/aquatics-pools/swim-lessons",

@@ -1,4 +1,5 @@
 import { BaseCard } from "@components"
+import { formatDateRange } from "@utils"
 
 const ExperienceCard = ({ data }) => {
 	const titleContent = `${data.title} · ${data.company}`
@@ -6,7 +7,7 @@ const ExperienceCard = ({ data }) => {
 	return (
 		<BaseCard
 			data={data}
-			leftSection={data.date}
+			leftSection={formatDateRange(data.dateStart, data.dateEnd)}
 			titleContent={titleContent}
 			previousTitles={data.previousTitles}
 		/>
