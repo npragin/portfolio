@@ -21,13 +21,11 @@ const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = 
 								href={data.link}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-violet-500 focus-visible:text-violet-500 group/link"
+								className="flex items-baseline justify-between text-base font-medium leading-tight text-slate-200 hover:text-violet-500 focus-visible:text-violet-500 group/link"
 							>
 								<span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-								<span>
-									{titleContent}
-									<ArrowUpRight size={16} className="ml-1 inline-block shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" />
-								</span>
+								<span>{titleContent}</span>
+								<ArrowUpRight size={16} className="shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" />
 							</a>
 						) : (
 							<span className="text-base font-medium leading-tight text-slate-200">
