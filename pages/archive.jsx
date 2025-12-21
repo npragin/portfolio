@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import { PROJECTS } from "@constants"
+import { PROJECTS, NAME } from "@constants"
 import { ArchiveLayout, Tools, ArrowLink } from "@components"
 import { ArrowLeft } from "@icons"
 
@@ -19,7 +19,11 @@ const Archive = () => {
 	return (
 		<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
 			<Head>
-				<title>Archive | Noah Pragin</title>
+				<title>Archive | {NAME}</title>
+				<meta name="description" content={`All projects by ${NAME}`} />
+				<meta property="og:title" content={`Archive | ${NAME}`} />
+				<meta property="og:description" content={`All projects by ${NAME}`} />
+				<meta property="og:type" content="website" />
 			</Head>
 			<div className="lg:py-24">
 				<Link
