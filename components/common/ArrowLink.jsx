@@ -24,18 +24,16 @@ const ArrowLink = ({ href, children, className = "", external = false }) => {
 				{linkContent}
 			</a>
 		)
-	} else {
-		return (
-			<Link
-				href={href}
-				target="_blank"
-				rel="noopener noreferrer"
-				className={baseClassName}
-			>
-				{linkContent}
-			</Link>
-		)
 	}
+
+	return (
+		<Link
+			href={href}
+			className={baseClassName}
+		>
+			{linkContent}
+		</Link>
+	)
 }
 
 export default ArrowLink
