@@ -4,7 +4,7 @@ const BaseLayout = ({ children, className = "" }) => {
 	return (
 		<>
 			<SpotlightCursor />
-			<div className={`min-h-screen font-inter ${className}`}>
+			<div className={`min-h-screen font-sans ${className}`}>
 				{children}
 			</div>
 		</>
