@@ -82,3 +82,12 @@
 @utility footer-link {
   @apply link-transition text-slate-200/70 font-medium;
 }
+
+/* 494 error */
+.next-error-h1 {
+  font-weight: 400 !important;
+}
+
+.next-error-h1 + div h2 {
+  font-weight: 300 !important;
+}
