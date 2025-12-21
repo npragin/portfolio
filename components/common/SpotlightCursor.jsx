@@ -1,17 +1,28 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 const SpotlightCursor = () => {
 	const [position, setPosition] = useState({ x: 0, y: 0 })
+	const rafIdRef = useRef(null)
 
 	useEffect(() => {
 		const updatePosition = (e) => {
-			setPosition({ x: e.clientX, y: e.clientY })
+			if (rafIdRef.current) {
+				return
+			}
+
+			rafIdRef.current = requestAnimationFrame(() => {
+				setPosition({ x: e.clientX, y: e.clientY })
+				rafIdRef.current = null
+			})
 		}
 
 		window.addEventListener("mousemove", updatePosition)
 
 		return () => {
 			window.removeEventListener("mousemove", updatePosition)
+			if (rafIdRef.current) {
+				cancelAnimationFrame(rafIdRef.current)
+			}
 		}
 	}, [])
 
