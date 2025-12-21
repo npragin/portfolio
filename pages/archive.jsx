@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import { PROJECTS, NAME } from "@constants"
-import { ArchiveLayout, Tools, ArrowLink } from "@components"
+import { BaseLayout, Tools, ArrowLink } from "@components"
 import { ArrowLeft } from "@icons"
 
 const getHostname = (url) => {
@@ -105,6 +105,6 @@ const Archive = () => {
 	)
 }
 
-Archive.getLayout = (page) => <ArchiveLayout>{page}</ArchiveLayout>
+Archive.getLayout = (page) => <BaseLayout>{page}</BaseLayout>
 
 export default Archive
