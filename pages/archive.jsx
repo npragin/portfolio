@@ -1,100 +1,110 @@
 import Head from "next/head"
 import Link from "next/link"
-import { PROJECTS } from "@constants"
-import { ArchiveLayout, Tools } from "@components"
-import { LuArrowUpRight as ArrowUpRight, LuArrowLeft as ArrowLeft } from "react-icons/lu"
+import { PROJECTS, NAME } from "@constants"
+import { BaseLayout, Tools, ArrowLink } from "@components"
+import { ArrowLeft } from "@icons"
 
-// TODO(npragin): Fix spacing around the content
-// TODO(npragin): Fix font for the table header, shouldn't be so bolded
-// TODO(npragin): Why am I having to use different bottom margins on the ArrowUpRight icon?
-// TODO(npragin): Move arrow icon to link component?
-// TODO(npragin): view full resume and project archive links are too close to the left edge (compare against card left edge)
+const getHostname = (url) => {
+	try {
+		return new URL(url).hostname.replace("www.", "")
+	} catch {
+		return url
+	}
+}
 
 const Archive = () => {
 	// Sort projects by year (newest first)
 	const sortedProjects = [...PROJECTS].sort((a, b) => parseInt(b.year) - parseInt(a.year))
 
 	return (
-		<div className="min-h-screen">
+		<div className="page-container">
 			<Head>
-				<title>Archive | Noah Pragin</title>
+				<title>Archive | {NAME}</title>
+				<meta name="description" content={`All projects by ${NAME}`} />
+				<meta property="og:title" content={`Archive | ${NAME}`} />
+				<meta property="og:description" content={`All projects by ${NAME}`} />
+				<meta property="og:type" content="website" />
 			</Head>
-			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+			<div className="lg:py-24">
 				<Link
 					href="/"
-					className="group inline-flex items-center gap-2 text-violet-500 font-circular-medium font-bold"
+					className="group mb-2 inline-flex items-center font-semibold leading-tight text-violet-500"
 				>
 					<ArrowLeft
 						size={16}
-						className="transition-transform group-hover:-translate-x-1 -translate-y-px"
+						className="mr-1 transition-transform group-hover:-translate-x-2"
 					/>
 					Noah Pragin
 				</Link>
-				<h1 className="text-4xl font-bold md:text-5xl text-slate-200 mb-2">
+				<h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
 					All Projects
 				</h1>
-				<div className="mt-12">
-					<table className="w-full border-collapse">
-						<thead className="sticky top-0 z-10">
-							<tr className="border-b border-slate-700/30 backdrop-blur-sm">
-								<th className="text-left py-4 px-4 text-sm font-circular-normal text-slate-200">
-									Year
-								</th>
-								<th className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
-									Project
-								</th>
-								<th className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
-									Built with
-								</th>
-								<th className="text-left py-4 px-4 text-sm font-circular-medium text-slate-200">
-									Link
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							{sortedProjects.map((project) => (
-								<tr
-									key={project.id}
-									className="border-b border-slate-700/50 transition-colors"
-								>
-									<td className="py-4 px-4 text-sm text-slate-400 font-circular-normal">
-										{project.year}
-									</td>
-									<td className="py-4 px-4">
-										<span className="text-slate-200 font-circular-normal font-bold">
-											{project.title}
-										</span>
-									</td>
-									<td className="py-4 px-4">
-										<div className="flex flex-wrap">
-											<Tools tools={project.tags} />
+				<table className="mt-12 w-full border-collapse text-left">
+					<thead className="sticky top-0 z-10 border-b border-slate-300/10 backdrop-blur">
+						<tr>
+							<th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
+							<th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
+							<th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">Built with</th>
+							<th className="hidden py-4 text-sm font-semibold text-slate-200 sm:table-cell">Link</th>
+						</tr>
+					</thead>
+					<tbody>
+						{sortedProjects.map((project, index) => (
+							<tr
+								key={project.title}
+								className={`border-b border-slate-300/10 ${index === sortedProjects.length - 1 ? "border-none" : ""}`}
+							>
+								<td className="py-4 pr-4 align-top text-sm text-slate-500">
+									<div className="translate-y-px">{project.year}</div>
+								</td>
+								<td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
+									<div>
+										{/* Mobile: title as link */}
+										<div className="block sm:hidden">
+											{project.link ? (
+												<ArrowLink
+													href={project.link}
+													className="hover:text-violet-500 focus-visible:text-violet-500"
+												>
+													{project.title}
+												</ArrowLink>
+											) : (
+												project.title
+											)}
 										</div>
-									</td>
-									<td className="py-4 px-4">
-										{project.link ? (
-											<Link
-												href={project.link}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="group inline-flex items-center gap-2 text-slate-400 hover:text-violet-500 transition-colors font-circular-normal text-sm"
-											>
-												{new URL(project.link).hostname.replace("www.", "")}
-												<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.75" />
-											</Link>
-										) : (
-											<span className="text-slate-600 text-sm">—</span>
-										)}
-									</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
+										{/* Desktop: plain title */}
+										<div className="hidden sm:block">
+											{project.title}
+										</div>
+									</div>
+								</td>
+								<td className="hidden py-4 pr-4 align-top lg:table-cell">
+									<ul className="flex -translate-y-1.5 flex-wrap">
+										<Tools tools={project.tags} compact />
+									</ul>
+								</td>
+								<td className="hidden py-4 align-top sm:table-cell">
+									{project.link ? (
+										<ArrowLink
+											href={project.link}
+											className="text-sm text-slate-400 hover:text-violet-500 focus-visible:text-violet-500"
+											iconSize={14}
+										>
+											{getHostname(project.link)}
+										</ArrowLink>
+									) : (
+										<span className="text-slate-600 text-sm">—</span>
+									)}
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	)
 }
 
-Archive.getLayout = (page) => <ArchiveLayout>{page}</ArchiveLayout>
+Archive.getLayout = (page) => <BaseLayout>{page}</BaseLayout>
 
 export default Archive

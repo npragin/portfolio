@@ -1,0 +1,6 @@
+export { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
+export { LuArrowRight as ArrowRight } from "react-icons/lu"
+export { LuArrowLeft as ArrowLeft } from "react-icons/lu"
+export { LuMail as Mail } from "react-icons/lu"
+export { FaGithub as Github } from "react-icons/fa"
+export { FaLinkedin as Linkedin } from "react-icons/fa"

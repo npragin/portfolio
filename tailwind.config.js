@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,11 +7,19 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"circular": ["circular-normal", "sans-serif"],
-				"circular-light": ["circular-light", "sans-serif"],
-				"circular-normal": ["circular-normal", "sans-serif"],
-				"circular-medium": ["circular-medium", "sans-serif"],
-				"circular-bold": ["circular-bold", "sans-serif"],
+				"sans": ["Inter", "system-ui", "sans-serif"],
+			},
+			fontWeight: {
+				normal: 300,
+				medium: 400,
+				semibold: 500,
+				bold: 600,
+			},
+			colors: {
+				"primary": "#12172e",
+			},
+			transitionDuration: {
+				"standard": "300ms",
 			},
 		},
 	},

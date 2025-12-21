@@ -1,28 +1,26 @@
-import React from "react"
-import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
-import { ExperienceCard } from "@components"
+import { ExperienceCard, ArrowLink, SectionHeader } from "@components"
 import { EXPERIENCE } from "@constants"
 
 const MyExperience = () => {
 	return (
-		<section id="experience">
-			<div className="grid justify-items-center grid-flow-row m-1 gap-4 px-2 pt-20 md:px-8">
-				{
-					EXPERIENCE.map((data, key) => (
-						<ExperienceCard key={key} data={data} />
-					))
-				}
+		<section id="experience" className="mb-16 md:mb-24 scroll-mt-24">
+			<SectionHeader>Experience</SectionHeader>
+			<div>
+				<ol className="group/list">
+					{
+						EXPERIENCE.map((data) => (
+							<ExperienceCard key={data.id} data={data} />
+						))
+					}
+				</ol>
 			</div>
-			<div className="flex ml-10 mt-8">
-				<a
+			<div className="mt-12">
+				<ArrowLink
 					href="/resume.pdf"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center text-slate-200 link-transition cursor-pointer group"
+					className="text-slate-200 link-transition cursor-pointer font-semibold"
 				>
-					<span className="mr-2">View Full R&eacute;sum&eacute;</span>
-					<ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform mb-0.5" />
-				</a>
+					View Full R&eacute;sum&eacute;
+				</ArrowLink>
 			</div>
 		</section>
 	)

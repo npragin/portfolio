@@ -1,19 +1,20 @@
-import React from "react"
 import Image from "next/image"
-import BaseCard from "../common/cards/BaseCard"
+import { BaseCard } from "@components"
 
 const ProjectCard = ({ data }) => {
 	const aspectClass = data.squareImage ? "aspect-square" : "aspect-video"
+	const isGif = data.image?.endsWith(".gif")
 
-	const leftSection = (isHovered) => (
+	const leftSection = () => (
 		<div
-			className={`relative w-full ${aspectClass} rounded-md overflow-hidden border-[2px] transition-colors ${isHovered ? "border-slate-500" : "border-slate-700/50"}`}
+			className={`relative w-full ${aspectClass} rounded-md overflow-hidden border-2 border-slate-700/50 transition-colors group-hover:border-slate-500`}
 		>
 			<Image
 				src={data.image}
-				alt={data.title}
+				alt={`Screenshot of ${data.title} project`}
 				fill
 				className="object-cover"
+				priority={isGif}
 			/>
 		</div>
 	)
@@ -24,6 +25,7 @@ const ProjectCard = ({ data }) => {
 			leftSection={leftSection}
 			titleContent={data.title}
 			toolsKey="tags"
+			isImageCard
 		/>
 	)
 }

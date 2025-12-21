@@ -1,60 +1,61 @@
-import { React, useState } from "react"
-import Link from "next/link"
-import { LuArrowUpRight as ArrowUpRight } from "react-icons/lu"
-import { CardLayout, Tools } from "@components"
+import { Tools } from "@components"
+import { ArrowUpRight } from "@icons"
 
-const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = "tools" }) => {
-	const [isHovered, setIsHovered] = useState(false)
+const BaseCard = ({ data, leftSection, titleContent, previousTitles, toolsKey = "tools", isImageCard = false }) => {
+	const cardInner = (
+		<>
+			{/* Hover background - only visible on lg screens */}
+			<span className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-violet-500/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></span>
 
-	const cardContent = (
-		<div
-			className={`flex h-full space-y-2 p-4 pt-1 card_stylings relative border-t transition-colors ${isHovered ? "border-slate-500/15" : "border-transparent"}`}
-			onMouseEnter={() => setIsHovered(true)}
-			onMouseLeave={() => setIsHovered(false)}
-		>
-			<div className="w-[25%] flex items-start justify-center p-2 m-1">
-				{typeof leftSection === "function" ? leftSection(isHovered) : leftSection}
+			{/* Left column - date or image */}
+			<div className={`z-10 mb-2 sm:col-span-2 ${isImageCard ? "sm:order-first" : "mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500"}`}>
+				{typeof leftSection === "function" ? leftSection() : leftSection}
 			</div>
-			<div className="w-[75%] justify-center p-2">
-				<div className="flex justify-between">
-					<div className={`text-md tracking-wide transition-colors ${isHovered && data.link ? "text-violet-500" : "text-slate-200"}`}>
-						{titleContent}
+
+			{/* Content column */}
+			<div className="z-10 sm:col-span-6">
+				<h3 className="font-medium leading-snug text-slate-200">
+					<div>
+						{data.link ? (
+							<a
+								href={data.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-baseline justify-between text-base font-medium leading-tight text-slate-200 hover:text-violet-500 focus-visible:text-violet-500 group/link"
+							>
+								<span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+								<span>{titleContent}</span>
+								<ArrowUpRight size={16} className="shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" />
+							</a>
+						) : (
+							<span className="text-base font-medium leading-tight text-slate-200">
+								{titleContent}
+							</span>
+						)}
 					</div>
-					{data.link &&
-						<ArrowUpRight
-							className={`transition-all ${
-								isHovered ? "text-violet-500 translate-x-1 -translate-y-1" : "text-slate-200"
-							}`}
-							size={20}
-						/>
-					}
-				</div>
-				{previousTitles && (
-					<div className="text-slate-400 text-md tracking-wide">{previousTitles}</div>
-				)}
-				<div className="text-sm text-slate-400 font-normal pt-3">
+				</h3>
+				{previousTitles?.map((title) => (
+					<div key={title} className="text-slate-400 text-sm mt-0.5">{title}</div>
+				))}
+				<p className="mt-2 text-sm leading-normal font-light text-slate-400">
 					{data.desc}
-				</div>
+				</p>
 				{data[toolsKey] && (
-					<div className="pt-4">
+					<ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
 						<Tools tools={data[toolsKey]} />
-					</div>
+					</ul>
 				)}
 			</div>
-		</div>
+		</>
 	)
 
-	if (data.link) {
-		return (
-			<Link href={data.link} target="_blank" rel="noopener noreferrer">
-				<CardLayout className="cursor-pointer">
-					{cardContent}
-				</CardLayout>
-			</Link>
-		)
-	}
-
-	return <CardLayout>{cardContent}</CardLayout>
+	return (
+		<li className="mb-12">
+			<div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+				{cardInner}
+			</div>
+		</li>
+	)
 }
 
 export default BaseCard

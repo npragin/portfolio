@@ -1,20 +1,15 @@
-import React from "react"
-import BaseCard from "../common/cards/BaseCard"
+import { BaseCard } from "@components"
+import { formatDateRange } from "@utils"
 
 const ExperienceCard = ({ data }) => {
-	const leftSection = (
-		<div className="text-slate-500 text-sm">{data.date}</div>
-	)
-
-	const titleContent = `${data.title} • ${data.company}`
+	const titleContent = `${data.title} · ${data.company}`
 
 	return (
 		<BaseCard
 			data={data}
-			leftSection={leftSection}
+			leftSection={formatDateRange(data.dateStart, data.dateEnd)}
 			titleContent={titleContent}
 			previousTitles={data.previousTitles}
-			toolsKey="tools"
 		/>
 	)
 }
