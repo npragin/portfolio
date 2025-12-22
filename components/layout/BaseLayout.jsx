@@ -1,5 +1,6 @@
 import { SpotlightCursor } from "@components"
-import { Analytics, SpeedInsights } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const BaseLayout = ({ children, className = "" }) => {
 	return (
