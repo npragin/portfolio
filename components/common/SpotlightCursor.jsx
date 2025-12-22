@@ -28,7 +28,7 @@ const SpotlightCursor = () => {
 
 	return (
 		<div
-			className="fixed pointer-events-none"
+			className="fixed pointer-events-none hidden lg:block"
 			style={{
 				left: 0,
 				top: 0,
