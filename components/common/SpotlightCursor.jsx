@@ -28,15 +28,9 @@ const SpotlightCursor = () => {
 
 	return (
 		<div
-			className="fixed pointer-events-none hidden lg:block"
+			className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
 			style={{
-				left: 0,
-				top: 0,
-				width: "100vw",
-				height: "100vh",
-				background: `radial-gradient(circle var(--spotlight-radius) at ${position.x}px ${position.y}px, 
-					var(--spotlight-color) 0%, 
-					var(--spotlight-bg) 70%)`,
+				background: `radial-gradient(var(--spotlight-radius) at ${position.x}px ${position.y}px, var(--spotlight-color) 0%, transparent var(--spotlight-stop))`,
 			}}
 		/>
 	)

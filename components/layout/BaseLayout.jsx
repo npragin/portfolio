@@ -7,9 +7,11 @@ const BaseLayout = ({ children, className = "" }) => {
 		<>
 			<Analytics />
 			<SpeedInsights />
-			<SpotlightCursor />
-			<div className={`min-h-screen font-sans ${className}`}>
-				{children}
+			<div className="relative">
+				<SpotlightCursor />
+				<div className={`min-h-screen font-sans ${className}`}>
+					{children}
+				</div>
 			</div>
 		</>
 	)
