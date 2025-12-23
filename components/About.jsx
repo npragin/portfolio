@@ -14,8 +14,10 @@ const About = () => {
 					<a className="about-link" href="https://www.anduril.com/altius" target="_blank" rel="noopener noreferrer">tube-launched fixed-wing UAVs</a>
 					,{" "}
 					<a className="about-link" href="https://www.sifly.co" target="_blank" rel="noopener noreferrer">world-record breaking quadcopters</a>
-					, and{" "}
+					,{" "}
 					<a className="about-link" href="https://www.global-formula-racing.com/en/" target="_blank" rel="noopener noreferrer">autonomous racecars</a>
+					, and{" "}
+					<a className="about-link" href="https://engineering.oregonstate.edu/all-stories/putting-robots-work-down-farm" target="_blank" rel="noopener noreferrer">apple-picking robots</a>
 					.
 				</p>
 				<p className="mb-4">
