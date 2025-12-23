@@ -19,7 +19,7 @@ export const EXPERIENCE = [
 		dateStart: "2025-06",
 		dateEnd: "2025-09",
 		company: "Anduril Industries",
-		desc: "I architected safety-critical behavior trees for UAV autonomy from the ground up, contributing foundational mission behaviors and fail-safe systems. I implemented embedded Rust middleware to enable seamless communication between autonomy and autopilot systems, and developed a high-performance state management system meeting strict real-time constraints for coordinate transformations and synchronized data fetching.",
+		desc: "I architected safety-critical behavior trees for UAV autonomy, contributing foundational mission and fail-safe behaviors. I built embedded Rust middleware for seamless autonomy-autopilot communication and developed a state management system that met strict real-time constraints for coordinate transformations and synchronized data fetching.",
 		tools: [
 			"Python",
 			"Rust",
@@ -34,7 +34,7 @@ export const EXPERIENCE = [
 		dateStart: "2024-09",
 		dateEnd: "present",
 		company: "CoRIS Institute",
-		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim2real with better synthetic orchard data using Blender. Separately, I've implemented neural networks for point clouds as a preprocessing step for RL training and contrasted their effects on real-to-sim transfer performance for robotic pick-and-place tasks.",
+		desc: "I work with faculty and grad students on an autonomous agricultural robot that navigates orchards, picks apples, and prunes branches. I've tuned Kalman filters to boost apple localization accuracy and improved reinforcement learning sim-to-real by improving synthetic orchard data generation using Blender. Separately, I've implemented neural networks for point clouds as a preprocessing step for RL training and contrasted their effects on sim-to-real transfer performance for robotic pick-and-place tasks.",
 		tools: [
 			"ROS",
 			"Blender",
@@ -50,7 +50,7 @@ export const EXPERIENCE = [
 		dateStart: "2024-06",
 		dateEnd: "2024-09",
 		company: "SiFly Aviation",
-		desc: "At this UAV startup, I contributed to SiFly's world record 3+ hour electric drone flight by delivering software across the full stack. I built a cloud-based fleet management platform, enabled ML analytics on telemetry, improved network performance for mission-critical data flow, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I helped meet aggressive Alpha launch deadlines.",
+		desc: "At this UAV startup, I contributed to SiFly's world-record 3+ hour electric drone flight by delivering software across the entire stack. I built a cloud-based fleet management platform, enabled ML analytics on telemetry data, improved network performance for mission-critical data flows, enhanced WebRTC security, and rapidly developed RESTful APIs. Through proactive teamwork, I helped meet aggressive Alpha launch deadlines.",
 		tools: [
 			"Embedded Software",
 			"Django",
@@ -67,7 +67,7 @@ export const EXPERIENCE = [
 		dateStart: "2024-02",
 		dateEnd: "present",
 		company: "Global Formula Racing",
-		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led the SLAM and Sensor Fusion integration after a major rework, streamlined observability into system failures, and coordinate with alumni and faculty advisors to prepare our vehicle for global competitions.",
+		desc: "As part of an international team, I manage autonomous racecar software projects from concept to integration. I led SLAM and Sensor Fusion integration following a major rework, streamlined observability of system failures, and coordinated with alumni and faculty advisors to prepare our vehicle for global competitions.",
 		tools: [
 			"Embedded Software",
 			"ROS",
@@ -147,7 +147,7 @@ export const PROJECTS = [
 	},
 	{
 		title: "Autonomous Mapping of Unseen Environments",
-		desc: "Autonomous mapping system with a two-tier controller architecture for obstacle avoidance and exploration strategy. Independently developed an expanding wavefront frontier detection algorithm, later discovering it aligned with published research by Phillip Quin, et al.",
+		desc: "Autonomous mapping system with a two-tier controller architecture for obstacle avoidance and exploration strategy. Independently developed an expanding wavefront frontier detection algorithm, later discovering it aligned with published research by Phillip Quin et al.",
 		image: "/unseen-env-mapping.png",
 		squareImage: true,
 		tags: ["Motion Planning", "Real-Time Systems", "SLAM", "ROS"],
