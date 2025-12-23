@@ -35,7 +35,15 @@ const About = () => {
 					<a className="about-link" href="https://www.linkedin.com/posts/npragin_hey-everyone-ive-been-working-hard-activity-7169460021712314368-134z" target="_blank" rel="noopener noreferrer">color-matching Pokémon to sports teams</a>.
 					Offline, you can find me cooking international food, building a LEGO,{" "}
 					<a className="about-link" href="https://letterboxd.com/npragin/" target="_blank" rel="noopener noreferrer">watching a movie</a>
-					, hanging out with my cats, and tending to my Animal Crossing island.
+					, tending to my Animal Crossing island, and hanging out with <span className="group/cats cats-cursor inline-flex lg:font-medium lg:text-slate-200">
+						<span className="cats-letter-wave delay-[50ms]">m</span>
+						<span className="cats-letter-wave delay-[75ms]">y</span>
+						<span className="cats-letter-wave delay-[100ms]">&nbsp;</span>
+						<span className="cats-letter-wave delay-[125ms]">c</span>
+						<span className="cats-letter-wave delay-[150ms]">a</span>
+						<span className="cats-letter-wave delay-[175ms]">t</span>
+						<span className="cats-letter-wave delay-[200ms]">s</span>
+					</span>.
 				</p>
 			</div>
 		</section>

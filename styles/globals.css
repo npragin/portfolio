@@ -24,6 +24,20 @@
   }
 }
 
+@utility cats-cursor {
+  @apply inline-block relative cursor-default;
+
+  &:hover {
+    @media (min-width: 1024px) {
+      cursor: url('/cats-cursor.png') 0 0, auto;
+    }
+  }
+}
+
+@utility cats-letter-wave {
+  @apply transition duration-75 group-hover/cats:text-fuchsia-400 group-hover/cats:-translate-y-px;
+}
+
 @utility no-scrollbar {
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
