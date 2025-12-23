@@ -128,12 +128,54 @@ export const SELECTED_PROJECTS = [
 ]
 
 export const PROJECTS = [
+  	{
+		title: "Terrain-Aware UAV Track & Follow",
+		desc: "Deep reinforcement learning framework for learning UAV autonomous search and tracking in procedurally generated GPS-denied forest environments.",
+		tags: ["Isaac Gym", "Deep RL", "Vision-Based Navigation"],
+		link: "https://github.com/npragin/terrain-track-follow",
+		year: "2025",
+	},
+	{
+		title: "AI Club Project Workshop",
+		desc: "Comprehensive tutorial series teaching NumPy, Pandas, PyTorch, and scikit-learn through a guided machine learning project.",
+		tags: ["Machine Learning", "Python", "Tutorial"],
+		link: "https://osu-ai.club/project-workshop",
+		year: "2025",
+	},
+	{
+		title: "Franka Research 3 ROS2 Policy Interface",
+		desc: "ROS2 package for controlling Franka Emika robots using RL policies.",
+		tags: ["ROS2", "Hardware", "Reinforcement Learning", "Point Clouds"],
+		link: "https://github.com/npragin/panda_py_pkg",
+		year: "2025",
+	},
+	{
+		title: "IoMT MQTT Threat Detection",
+		desc: "ML-based identification of malicious connections to Medical IoT devices via MQTT with a focus on addressing dataset-specific challenges.",
+		tags: ["Machine Learning", "Cybersecurity", "IoT"],
+		link: "https://github.com/npragin/iomt-mqtt-threat-detection",
+		year: "2025",
+	},
+	{
+		title: "Pet Breed Classifier",
+		desc: "Microservices-based web application for classifying dog and cat breeds using a ConvNeXt-Tiny model.",
+		tags: ["Deep Learning", "Flask", "Microservices"],
+		link: "https://github.com/npragin/pet-classifier",
+		year: "2025",
+	},
 	{
 		title: "Learning-Based AUV Docking",
 		desc: "Autonomous underwater vehicle (AUV) docking policies that maintain performance despite unseen, unpredictable dynamics.",
 		image: "/learning-based-docking.gif",
-		tags: ["NVIDIA Isaac Sim", "Deep RL", "Reward Shaping"],
+		tags: ["Isaac Sim", "Deep RL", "Reward Shaping"],
 		link: "https://github.com/npragin/learning-based-docking",
+		year: "2025",
+	},
+	{
+		title: "Multi-Person Pose Estimation Study",
+		desc: "Comparative analysis of top-down, bottom-up, and end-to-end architectures for human pose estimation.",
+		tags: ["Computer Vision", "Deep Learning", "PyTorch"],
+		link: "https://github.com/npragin/hpe-mpii-comparative",
 		year: "2025",
 	},
 	{
@@ -146,12 +188,33 @@ export const PROJECTS = [
 		year: "2025",
 	},
 	{
+		title: "Character-Level RNN Text Generator",
+		desc: "PyTorch implementation of character-level RNN for text generation.",
+		tags: ["PyTorch", "NLP"],
+		link: "https://github.com/npragin/charnn",
+		year: "2025",
+	},
+	{
 		title: "Autonomous Mapping of Unseen Environments",
 		desc: "Autonomous mapping system with a two-tier controller architecture for obstacle avoidance and exploration strategy. Independently developed an expanding wavefront frontier detection algorithm, later discovering it aligned with published research by Phillip Quin et al.",
 		image: "/unseen-env-mapping.png",
 		squareImage: true,
 		tags: ["Motion Planning", "Real-Time Systems", "SLAM", "ROS"],
 		link: "https://github.com/npragin/unseen-env-mapping",
+		year: "2024",
+	},
+	{
+		title: "Interactive Scalar Field Visualization",
+		desc: "OpenGL-based scientific visualization tool for exploring 3D scalar field data and comparing color map schemes.",
+		tags: ["C++", "OpenGL", "Scientific Visualization"],
+		link: "https://github.com/npragin/isfv",
+		year: "2024",
+	},
+	{
+		title: "Portfolio Website",
+		desc: "The website you're currently on.",
+		tags: ["Next.js", "Tailwind CSS", "React"],
+		link: "https://github.com/npragin/portfolio",
 		year: "2024",
 	},
 ]

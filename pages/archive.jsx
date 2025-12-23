@@ -1,8 +1,8 @@
 import Head from "next/head"
 import Link from "next/link"
 import { PROJECTS, NAME } from "@constants"
-import { BaseLayout, Tools, ArrowLink } from "@components"
-import { ArrowLeft } from "@icons"
+import { BaseLayout, Tools, ArrowLink, Tooltip } from "@components"
+import { ArrowLeft, Info } from "@icons"
 
 const getHostname = (url) => {
 	try {
@@ -58,7 +58,7 @@ const Archive = () => {
 									<div className="translate-y-px">{project.year}</div>
 								</td>
 								<td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
-									<div>
+									<div className="flex items-center gap-2">
 										{/* Mobile: title as link */}
 										<div className="block sm:hidden">
 											{project.link ? (
@@ -76,6 +76,16 @@ const Archive = () => {
 										<div className="hidden sm:block">
 											{project.title}
 										</div>
+										{project.desc && (
+											<span className="hidden lg:inline-flex">
+												<Tooltip content={project.desc}>
+													<Info
+														size={16}
+														className="shrink-0 text-slate-500 transition-colors hover:text-violet-500"
+													/>
+												</Tooltip>
+											</span>
+										)}
 									</div>
 								</td>
 								<td className="hidden py-4 pr-4 align-top lg:table-cell">
