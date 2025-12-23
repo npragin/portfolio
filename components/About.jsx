@@ -13,7 +13,7 @@ const About = () => {
 					Since then, I&apos;ve engineered software for {" "}
 					<a className="about-link" href="https://www.anduril.com/altius" target="_blank" rel="noopener noreferrer">tube-launched fixed-wing UAVs</a>
 					,{" "}
-					<a className="about-link" href="https://www.sifly.co" target="_blank" rel="noopener noreferrer">world-record breaking quadcopters</a>
+					<a className="about-link" href="https://www.sifly.co" target="_blank" rel="noopener noreferrer">world-record-breaking quadcopters</a>
 					,{" "}
 					<a className="about-link" href="https://www.global-formula-racing.com/en/" target="_blank" rel="noopener noreferrer">autonomous racecars</a>
 					, and{" "}
@@ -31,8 +31,8 @@ const About = () => {
 					I champion a pragmatic, tool-agnostic approach and am committed to lifelong learning as I explore new technology and industries.
 				</p>
 				<p className="mb-4">
-					In my free time, I develop algorithms leveraging public data to create fun visualizations like{" "}
-					<a className="about-link" href="https://www.linkedin.com/posts/npragin_hey-everyone-ive-been-working-hard-activity-7169460021712314368-134z" target="_blank" rel="noopener noreferrer">color matching Pokémon to sports teams</a>.
+					In my free time, I leverage public data to create fun visualizations, like{" "}
+					<a className="about-link" href="https://www.linkedin.com/posts/npragin_hey-everyone-ive-been-working-hard-activity-7169460021712314368-134z" target="_blank" rel="noopener noreferrer">color-matching Pokémon to sports teams</a>.
 					Offline, you can find me cooking international food, building a LEGO,{" "}
 					<a className="about-link" href="https://letterboxd.com/npragin/" target="_blank" rel="noopener noreferrer">watching a movie</a>
 					, hanging out with my cats, and tending to my Animal Crossing island.
