@@ -31,7 +31,7 @@ const About = () => {
 					I champion a pragmatic, tool-agnostic approach and am committed to lifelong learning as I explore new technology and industries.
 				</p>
 				<p className="mb-4">
-					In my free time, I develop leverage public data to create fun visualizations, like{" "}
+					In my free time, I leverage public data to create fun visualizations, like{" "}
 					<a className="about-link" href="https://www.linkedin.com/posts/npragin_hey-everyone-ive-been-working-hard-activity-7169460021712314368-134z" target="_blank" rel="noopener noreferrer">color-matching Pokémon to sports teams</a>.
 					Offline, you can find me cooking international food, building a LEGO,{" "}
 					<a className="about-link" href="https://letterboxd.com/npragin/" target="_blank" rel="noopener noreferrer">watching a movie</a>
